@@ -1,0 +1,5489 @@
+🛑 Admission - Core Java Batch-21
+----------------------------------
+
+✅ Mentor      : Sachin Dhane
+✅ Course Code : CJB-21
+✅ Course Name : Core Java + Project
+✅ Days        : Thu-Fri-Sat, 7.00 PM
+✅ Course Fees : Rs. 5000
+✅ Google Pay  : 9028282629
+✅ Phone  Pay  : 9028282629
+
+
+🛑 Installament
+Installment 1 : Rs. 2500  
+Installment 2 : Rs. 2500 
+
+🛑 Note :  
+Complete Your Payments & mail Below Details to "fees@technocompacademy.com"
+Also on WhatsApp to "9028282629"
+
+1) Your Full Name (This name will Appear on Certificate)
+2) WhatsApp Number
+3) Email
+4) Batch Code E.g CJB-21
+5) Payment ScreenShot(Transacion ID)
+
+
+-------------------------------------------------
+Whatsapp Group - Core Java Batch-21 (24 hrs)
+App Access
+	--> Notes
+	--> Video 
+
+
+Core Java(J2SE)
+----------------
+
+Q. Sir, I want to become a Java Developer(Fullstack Developer) ?
+Q. Sir, Where we can see our Course Core Java?
+
+D:\2025\CJ-B21\JDK21\jdk-21.0.7\bin
+
+
+
+public native void hashCode()
+{
+	// low level functionality
+}
+
+printf() ----> write()      --->   Monitor Device Driver ---> HELLO
+                System call
+
+
+println("HELLO");
+
+HELLO
+
+print("HELLO \n")
+HELLO
+
+
+import java.io.*;
+
+public class Demo
+{
+	public static void main(String args[]) throws Exception 
+	{	
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.print("Enter the First Number :");
+		int a = Integer.parseInt(br.readLine());
+		
+		System.out.print("Enter the Second Number : ");
+		int b = Integer.parseInt( br.readLine() );
+
+		int ans =  a + b; // 8 =  3 + 5
+
+		System.out.println("Addition = " +  ans); // Addition = 8
+	}
+}
+
+
+import java.io.*;
+import java.util.Scanner;
+
+public class Demo
+{
+	public static void main(String args[]) 
+	{	
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Enter the First Number :");
+		int a = sc.nextInt() ;  // "3" --> 3
+		
+		System.out.print("Enter the Second Number : ");
+		int b = sc.nextInt();
+
+		int ans =  a + b; // 8 =  3 + 5
+
+		System.out.println("Addition = " +  ans); // Addition = 8
+	}
+}
+
+
+Q. Write a program which accepts radius from User.
+   Display area circle
+
+   area = 3.14 * radius * radius;
+
+import java.io.*;
+
+public class CircleDemo
+{
+	public static void main(String args[]) throws IOException 
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.print("Enter the Radius : ");
+		double radius = Double.parseDouble( br.readLine());
+
+		double area = 3.14 * radius * radius; 
+
+		System.out.println("Area of a Circle : " + area  );
+
+	}
+}
+
+
+import java.io.*;
+
+public class CircleDemo
+{
+	public static void main(String args[]) throws IOException 
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.print("Enter the Radius : ");
+		float radius = Float.parseFloat( br.readLine());
+
+		float area = 3.14f * radius * radius; 
+
+		System.out.println("Area of a Circle : " + area  );
+
+	}
+}
+
+
+import java.io.*;
+
+public class CircleDemo
+{
+	public static void main(String args[]) throws IOException 
+	{
+		final float PI = 3.14f;
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.print("Enter the Radius : ");
+		float radius = Float.parseFloat( br.readLine());
+
+		float area = PI * radius * radius; 
+
+		System.out.println("Area of a Circle : " + area  );
+
+	}
+}
+
+How to declare Constants in Java
+--> Use 'final' keyword
+
+final double PI = 3.14;
+
+public class CircleDemo
+{
+	public static void main(String args[]) throws IOException 
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.print("Enter the Radius : ");
+		float radius = Float.parseFloat( br.readLine());
+
+		float area = (float) Math.PI * radius * radius; 
+
+		System.out.println("Area of a Circle : " + area  );
+
+	}
+}
+
+
+import java.io.*;
+
+
+public class CircleDemo
+{
+	public static void main(String args[]) throws IOException 
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.print("Enter the Radius : ");
+		double radius = Double.parseDouble( br.readLine());
+
+		double area =  Math.PI * radius * radius; 
+
+		System.out.println("Area of a Circle : " + area  );
+		System.out.printf("Circle Area       : %.2f ", area);
+		   
+	}
+}
+
+	int a[] = {11,22,33,44, 55};
+
+
+
+		System.out.print("Array : ");
+
+		for(int i=0; i < a.length; i++)
+		{
+
+			System.out.print(a[i] + " ");  // 
+
+		}
+
+
+int a = 3;
+		int b = 5;
+
+		System.out.println(a+b); //8 
+
+		String s = "IND";
+		String t = "TCA";
+
+		System.out.println(s+t);//"IND" + "TCA" --> INDTCA
+
+Normal For Loop
+---------------
+int a[] = {11,22,33,44,55};
+
+		System.out.println("No. of Element in an Array :" +  a.length);
+
+		System.out.print("Array : ");
+
+		for(int i=0; i < a.length; i++)
+		{
+			System.out.print(a[i] + " ");  
+		}
+
+For Each Loop
+--------------
+		int a[] = {11,22,33};
+
+		System.out.print("Array : ");
+
+		for( int data  : a )
+		{
+			System.out.print(data + " ");
+		}
+
+Using Arrays
+-------------
+		int a[] = {55,33,11,22,44};
+
+		Arrays.sort(a);
+
+		System.out.print("Data : " + Arrays.toString(a) );
+
+Q. When you get ArrayIndexOutOfBoundsException ?
+-------------------------------------------------
+--> If user is trying to access elements from array out of the boundry then JVM raise an Exception "ArrayIndexOutOfBoundsException".
+
+Q. When you get NullPointerException ?
+-------------------------------------------------
+--> When you have declared 'array variable' but not yet created an 'array' still you are accessing array's length then you will encounter NullPointerException.
+
+Pointer
+---------
+--> Java doen have pointer at progrmmer level mean programmer can not declare Pointer.
+--> Java has pointer at JVM-level.
+
+Binary Search
+--------------
+		int a[] = {55,22,11,44,33};
+
+		Arrays.sort(a); // a : 11,22,33,44,55
+
+		int pos = Arrays.binarySearch(a,33);
+		
+		if(pos>=0)
+		{
+			System.out.print("Data is Found at index : " + pos);
+		}
+		else 
+		{
+			System.out.print("Data is not Found index:" + pos);
+		}
+
+
+fill()
+-------
+
+--> It intilize each locaion of an array by given value.
+
+		int a[] = new int[5];   // a : 0  0   0   0  0
+	
+		Arrays.fill(a, 77);	    // a : 77 77  77 77  77
+
+		System.out.print("Data : " + Arrays.toString(a) );
+
+equals()
+---------
+--> It check 'content' of an array.
+
+	   int a[] = {11,22,33};   
+		int b[] = {11,22,33};
+
+		if( Arrays.equals(a,b) )	    
+		{	
+			System.out.println("Both Arrays are Equal !!");
+		}
+		else 
+		{
+			System.out.println("Both Arrays are not Equal !!");
+		}
+
+Reference Comparison
+---------------------
+
+	int a[] = {11,22,33};   
+		int b[] = {11,22,33};
+
+		System.out.println("Ref-A:" + a);
+		System.out.println("Ref-B:" + b);
+
+		if( a == b )	 // Reference Comparison    
+		{	
+			System.out.println("IND");
+		}
+		else 
+		{
+			System.out.println("AUS");
+		}
+
+		int a[] = {11,22,33};    // a : 11 22 33
+		int b[] = new int[3];    // b : 0  0  0
+
+		b = a;  // Reference Copy
+		
+		System.out.println("Ref-A:" + a);
+		System.out.println("Ref-B:" + b);
+
+		System.out.println(Arrays.toString(a)); 
+		System.out.println(Arrays.toString(b));
+
+
+		if( a==b )	  // Reference Comparison
+		{	
+			System.out.println("IND");
+		}
+		else 
+		{
+			System.out.println("AUS");
+		}
+
+Array Copy Operation
+----------------------
+
+	  int a[] = {11,22,33,44,55};
+
+		int b[] = Arrays.copyOf(a, a.length);  // new array
+
+		System.out.println("Ref-A:" + a);
+		System.out.println("Ref-B:" + b);
+
+		System.out.println(Arrays.toString(a)); 
+		System.out.println(Arrays.toString(b));
+
+
+Note:
+-----
+int a[] = {11,22,33};
+int b[] = a;
+		
+		Vs
+
+int a[] = {11,22,33};
+int b[] = Arrays.copyOf(a, a.length);
+
+*23-08-2025*
+-------------
+Q. Store 'n' elements in an Array, Print its sum
+----------------------------------------------------
+
+import java.io.*;
+import java.util.Arrays;
+
+public class Demo
+{
+	public static void main( String args[] ) throws Exception
+	{
+		BufferedReader br  = new BufferedReader( new InputStreamReader(System.in));	
+
+		System.out.print("How many Number : ");
+		int n = Integer.parseInt(br.readLine()); // n=3
+
+		int a[] = new int[n];
+
+		/* Array Accepting Logic */
+
+		for(int i=0; i < a.length; i++ )
+		{
+			System.out.print("Enter the Data :");
+			a[i] = Integer.parseInt(br.readLine());
+		}
+
+		System.out.println("Data : " +  Arrays.toString(a) );
+
+		/* Sum Calculation Logic */
+
+		int ans = 0;
+
+		for(int i=0; i < a.length; i++)
+		{
+			ans = ans + a[i];
+		}
+
+		System.out.println("Addition of Array Elements : " +  ans );
+	}
+}
+
+Command Line Arguments
+------------------------
+--> The values sent from command line/prompt to the main method such values are called as Command Line Arguments.
+
+--> All Commnd line args are of type 'String'.
+
+
+Q. Accept 'n' integer number from commandline , Print its sum
+----------------------------------------------------
+import java.io.*;
+import java.util.Arrays;
+
+public class Demo
+{
+	public static void main( String args[] )    // args: "10"  "50" "25" 
+	{
+		System.out.println("No. of Elements :" + args.length);
+
+		System.out.println("Commnad Line args :" +  Arrays.toString(args));
+
+		int ans = 0;
+
+		for(int i=0; i < args.length; i++)
+		{
+			ans = ans + Integer.parseInt( args[i] );  // "50" --> 50
+		}
+
+		System.out.println("Addition : " + ans);
+	}
+}
+
+
+1)
+import java.io.*;
+
+public class Demo
+{
+	public static void main( String args[] )
+	{
+		
+		int a[][] = new int[3][2];
+
+
+		for(int i=0; i<3; i++)
+		{
+			for(int j=0; j<2; j++)
+			{
+				System.out.print(a[i][j] +" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+import java.io.*;
+
+public class Demo
+{
+	public static void main( String args[] )
+	{
+		
+		int a[][] = { {11,12,13,14}, {21,22,23,24}, {31,32,33,34},{41,42,43,44}};
+
+
+		for(int i=0; i< a.length; i++)
+		{
+			for(int j=0; j< a[i].length ; j++)
+			{
+				System.out.print(a[i][j] +" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+
+Menu:
+Add
+Display
+
+What you choice : add
+
+
+Do you want to Continue[Yes/yes]:YeS
+
+		String s = "SACHIN";
+		String t = "sachin";
+
+		if( s.equalsIgnoreCase(t) )
+		{
+			System.out.println("YES");
+		}
+		else
+		{
+			System.out.println("NO");
+		}
+
+split()
+--------
+		String s = "888888888,bbbbbb,5000,5000";
+		
+		String[] tokens = s.split(",");
+
+		String phno = tokens[0];
+		String name = tokens[1];
+		int total_fees = Integer.parseInt(tokens[2]);
+		int paid_fee   = Integer.parseInt(tokens[3]); 
+
+		int remaining = total_fees - paid_fee;
+
+		String messsage = "Hi " + name + ", Your Remaining fees is Rs." + remaining;
+
+		System.out.println(messsage);
+
+-------------------------------
+
+toCharArray()
+==============
+--> When we want to perform operations on charaters of a string then we must convert string into an array.
+
+
+String S = "sachin dhane";  // s*chin dh*ne
+		
+		char[] ch = S.toCharArray();
+
+
+		for(int i=0; i< ch.length; i++)
+		{
+			if(ch[i]=='a')
+			{
+				System.out.print("*");
+			}
+			else  
+			{
+				System.out.print( ch[i] );
+			}
+		}
+
+Assignment
+-----------
+Q. Accept the String from user, Count how many vowels in it.
+
+
+	
+
+
+HTML-CSS Free Batch :
+---------------------
+Batch Code : htcss
+
+
+
+Immutable String
+------------------
+Sting Class
+
+Mutable String
+---------------
+StringBuffer
+StringBuilder
+
+
+
+Q. sir can't we get memory for member methods on heap ?
+Ans: NO
+
+Sir, as Java is robust, 
+it is not allowed to use uninitialized variables, but here you have not initialized.
+
+
+System.out.println("In Main I:" + ob.i);
+		System.out.println("In Main J:" + ob.j);
+
+
+In Java There are 4 acceess modifiers
+------------------------------------
+1. public
+2. protected
+3. private
+4. Default
+
+private int i;
+protected int j;
+public int k;
+int l;
+
+Data Security
+------------
+--> Hiding data from external world is called as data hiding.
+--> To achieve data hiding we have to use 'private' keyword.
+
+import java.io.*;
+
+class A
+{
+	private int i;
+	private int j;
+	
+	public void display()
+	{
+		System.out.println("Hello World");
+		System.out.println("VALUE OF I :" + i);
+		System.out.println("VALUE OF J :" + j);
+	}
+}
+
+public class Demo
+{
+
+	public static void main( String args[] )
+	{
+		A ob = new A();
+		ob.display();
+
+		System.out.println("VALUE OF i :" + ob.i);
+		System.out.println("VALUE OF j :" + ob.j);
+	}
+}
+
+How to controll unauthorized or unintended access
+-------------------------------------------------
+
+import java.io.*;
+
+class A
+{
+	private int i;
+	private int j;
+	
+	public void display()
+	{
+		// Plse enter your mpin
+		// mpin = 1234
+		//if(mpin==1111)
+
+			System.out.println("Hello World");
+			System.out.println("VALUE OF I :" + i);
+			System.out.println("VALUE OF J :" + j);
+		// else
+		//  S.O.P(Unauthtorized Accces)
+
+	}
+}
+
+public class Demo
+{
+
+	public static void main( String args[] )
+	{
+		A ob = new A();
+		ob.display();
+	}
+}
+
+
+Q. What is Local variable ?
+------------------------------
+--> The variable which are declared in a method are called as Local variable.
+--> Local variable does not intialized to a default value.
+--> Local variables get a memory on Stack.
+--> Local variables get a memory when method is called, and its memory is freed when method completed its execution.
+
+
+Example:
+--------
+
+import java.io.*;
+
+class A
+{
+	private int i;
+	private int j;
+	
+	public void display()
+	{
+		int z = 10;
+		System.out.println("VALUE OF I :" + i);
+		System.out.println("VALUE OF J :" + j);
+		System.out.println("VALUE OF Z :" + z);
+	}
+}
+
+public class Demo
+{
+
+	public static void main( String args[] )
+	{
+		int m =  20;
+		System.out.println("Value of M :" + m);
+
+		A ob = new A();  
+		ob.display();
+		
+	}
+}
+
+Non-Printable Charaters -
+\t,\n,\0
+
+
+By default fields/Data members are intialzed to a default value.
+-------------------------------------------------------------------
+
+import java.io.*;
+
+class A
+{
+	private int i; 
+	private float f;
+	private double d;
+	private char ch;
+	private boolean b;
+	private String s;
+	
+	public void display()
+	{
+		
+		System.out.println("Default Value of Intgers :" + i);  // 0
+		System.out.println("Default Value of float   :" + f); // 0.0
+		System.out.println("Default Value of double  :" + d); // 0.0
+		System.out.println("Default Value of char    :" + ch);// \0
+		System.out.println("Default Value of boolean :" + b); // false
+		System.out.println("Default Value of String  :" + s); // null
+	}
+}
+
+public class Demo
+{
+	public static void main( String args[] )
+	{
+		A ob = new A();  
+		ob.display();
+	}
+}
+
+
+NullPointerException
+------------------------
+
+class A
+{
+	private int i; 
+	private float f;
+	private double d;
+	private char ch;
+	private boolean b;
+	private String s;
+	
+	public void display()
+	{
+		System.out.println("Default Value of Intgers :" + i);  // 0
+		System.out.println("Default Value of float   :" + f); // 0.0
+		System.out.println("Default Value of double  :" + d); // 0.0
+		System.out.println("Default Value of char    :" + ch);// \0
+		System.out.println("Default Value of boolean :" + b); // false
+		System.out.println("Default Value of String  :" + s); // null
+	}
+}
+
+public class Demo
+{
+
+	public static void main( String args[] )
+	{
+		A ob = null;  
+		ob.display();
+		
+ 	}
+}
+
+
+import java.io.*;
+
+class A
+{
+	private int i; 
+	private float f;
+	private double d;
+	private char ch;
+	private boolean b;
+	private String s;
+	
+	public void display()
+	{
+		System.out.println("Default Value of Intgers :" + i);  // 0
+		System.out.println("Default Value of float   :" + f); // 0.0
+		System.out.println("Default Value of double  :" + d); // 0.0
+		System.out.println("Default Value of char    :" + ch);// \0
+		System.out.println("Default Value of boolean :" + b); // false
+		System.out.println("Default Value of String  :" + s); // null
+	}
+}
+
+public class Demo
+{
+
+	public static void main( String args[] )
+	{
+		A ob = null;  
+		
+		if (ob instanceof A )
+		{
+			System.out.println("Yes ob is poiteing A's object");
+		}
+		else
+		{
+			System.out.println("Noooo ob is poiteing object");
+		}
+
+
+		
+ 	}
+}
+
+
+import java.io.*;
+
+class A
+{
+	private int i; 
+	private float f;
+	private double d;
+	private char ch;
+	private boolean b;
+	private String s;
+	
+	public void display()
+	{
+		System.out.println("Default Value of Intgers :" + i);  // 0
+		System.out.println("Default Value of float   :" + f); // 0.0
+		System.out.println("Default Value of double  :" + d); // 0.0
+		System.out.println("Default Value of char    :" + ch);// \0
+		System.out.println("Default Value of boolean :" + b); // false
+		System.out.println("Default Value of String  :" + s); // null
+	}
+}
+
+public class Demo
+{
+
+	public static void main( String args[] )
+	{
+		A ob = new A();  
+		System.out.println(ob instanceof A);
+
+		A ob2 = null;
+		System.out.println(ob2 instanceof A);
+
+		String s ="TCA";
+        System.out.println(s instanceof String);
+
+ 	}
+}
+
+
+
+Local variable
+Stack
+Default values
+Non-printable chars
+NullPointerException
+instanceof
+
+-------------------------------------------------------------------------------
+
+display();  <--- This is a Method Call
+
+int i;      <---- i is having garbage
+
+int i=0;
+
+
+int i;
+
+i=0;
+
+i=10;
+
+
+int i=0;
+
+i = 10
+
+i = 20
+
+
+Q. What is Constructor ?
+--> It is method which gets called automatically/implicitly to intialize object's member.
+		1. 0-arg
+		2. Parameterized
+
+ob.A();
+
+
+import java.io.*;
+
+
+class A
+{
+	private int i;
+	private int j;
+
+	public A()
+	{
+		i = -1;
+		j = -1;
+		System.out.println("I am in Empty/Default/0-arg Constructor");
+	}
+
+	public A(int x, int y)
+	{
+		i = x;
+		j = y;
+		System.out.println("I am in Parameterized Constructor");
+	}
+
+	public void display()
+	{
+		System.out.println("Value of I :" + i);
+		System.out.println("Value of J :" + j);
+	}
+
+	
+}
+
+public class Demo
+{
+
+	public static void main( String[] args )
+	{
+
+		A ob1 = new A(10,20);
+		A ob2 = new A(11,22);
+
+		ob1.display();
+		ob2.display();
+
+
+		
+
+		
+	}
+}
+
+Note:
+-----
+Jar class madhe ek pan constructor nasel tar JVM swatacha ek constructor add karato(0-arg) that construcor is called as 'Default constructor'.
+
+class A
+{
+	
+}
+
+A ob = new A();
+
+
+Pan tumi ek jari constructor lihila tar JVM swatach provide karat nahi.
+
+class A
+{
+	A(int x, int j)
+	{
+
+	}
+}
+
+
+
+If you don't write any single constructor then compiler will provide Default constructor...but if you provide 'any' single constructor then compiler doesn't provide default constructor. 
+
+
+To 'initialized' data members of class we must write Constructor_____.
+
+
+sir  0-arg constructor call vhyachya adhi  values 0 la kase initialize hotat becuase of 'new' means by heap manager.
+
+
+Heap manager
+By default, heap provides 0 (no garbage)
+
+
+
+"Jar ekhadi method object ne call hot asel OR Object is responsible to call a method"
+
+Reference Variable / Object Variable
+
+
+What is 'this' in Java
+=======================
+When a non-static method called (using an object) then 'this' reference variable is creatd to store reference of callar object.
+
+Marathi:
+---------
+Jar ekhadi method object ne call hot asel or object mule call hot asel, 
+tar JVM automatically creates 'this' variable(Reference variable) which stores reference of 'callar object'.
+
+Use
+----
+1. When parameters name & data memebers name is same in that case to resolve ambiguty we need 'this'.
+2. When local variable name & data memebers name is same in that case to resolve ambiguty we need 'this'.
+3. To call one constructor from another constructor.
+
+
+import java.io.*;
+
+class A
+{
+	private int i;
+	private int j;
+
+	public A()
+	{
+		this(-1,-1);
+		System.out.println("I am in Empty/Default/0-arg Constructor !!");
+	}
+
+	public A(int i, int j)
+	{
+		this.i = i;
+		this.j = j;
+		System.out.println("I am in Parameterized Constructor !!");
+	}
+
+	public void display()
+	{
+		int  i=9999;
+		System.out.println("Value of I :" + this.i);
+		System.out.println("Value of J :" + this.j);
+		System.out.println("Local    I :" + i);
+	}
+}
+
+public class Demo
+{
+
+	public static void main( String[] args )
+	{
+		A ob1 = new A();
+		ob1.display();
+
+		
+	}
+}
+
+
+Construcor
+ 1. D C
+ 2. P C
+
+this variable & uses
+
+Field Intializer.
+
+import java.io.*;
+
+class A
+{
+	private int i;
+	private int j;
+	
+	public A()
+	{
+		i=-1;
+		j=-1;
+	}
+	public A(int i, int j)
+	{
+		this.i = i;
+		this.j = j;
+	}
+
+	public void display()
+	{
+		System.out.println("Value of I :" + i);
+		System.out.println("Value of J :" + j);
+	}
+}
+
+public class Demo
+{
+
+	public static void main( String[] args )
+	{
+		A ob1 = new A();
+		ob1.display();
+
+		A ob2 = new A(11,22);
+		ob2.display();
+
+	}
+}
+
+Student class Design
+====================
+import java.io.*;
+
+class Student
+{ 
+	private int rno;
+	private String name;
+	private double per;
+
+	public Student()
+	{
+		rno  = 0;
+		name = "";
+		per  = 0.0;
+	}
+
+	public Student(int rno, String name, double per)
+	{
+		this.rno  = rno;
+		this.name = name;
+		this.per  = per;
+	}
+
+	public void display()
+	{
+		System.out.println("Roll Number :  " +  rno);
+		System.out.println("Name        :  " +  name);
+		System.out.println("Percentage  :  " +  per);
+		System.out.println("---------------------------------");
+	}
+}
+
+
+public class Demo
+{
+	public static void main( String[] args )
+	{
+		Student s1 = new Student();
+
+		Student s2 = new Student(101,"AAA", 60);
+
+		s1.display();
+		s2.display();		
+	}
+}
+
+
+Student class Design using Setter & getter
+-------------------------------------------
+import java.io.*;
+
+class Student
+{ 
+	private int rno;
+	private String name;
+	private double per;
+	
+	public void setRno(int rno) 
+	{
+		this.rno = rno;
+	}
+
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+
+	public void setPer(double per) 
+	{
+		this.per = per;
+	}
+
+	public int getRno()
+	{
+		return rno;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public double getPer()
+	{
+		return per;
+	}
+
+	public void display()
+	{
+		System.out.println("Roll Number :  " +  rno);
+		System.out.println("Name        :  " +  name);
+		System.out.println("Percentage  :  " +  per);
+		System.out.println("---------------------------------");
+	}
+}
+
+public class Demo
+{
+	public static void main( String[] args )
+	{
+		Student s1 = new Student(); // [rno: 101 name:AAA  per:60.0 ]
+		
+		s1.setRno(101);
+		s1.setName("AAA");
+		s1.setPer(60.0);
+
+
+		System.out.println("Student Rno  :" +  s1.getRno());
+		System.out.println("Student Name :" +  s1.getName());
+		System.out.println("Student Per  :" +  s1.getPer());
+
+		System.out.println("---------------------------------");
+
+		Student s2 = new Student();
+		s2.setRno(102);
+		s2.setName("BBB");
+		s2.setPer(70.0);
+
+		System.out.println("Student Rno  :" +  s2.getRno());
+		System.out.println("Student Name :" +  s2.getName());
+		System.out.println("Student Per  :" +  s2.getPer());
+
+		System.out.println("---------------------------------");
+
+		s1.display();
+		s2.display();
+	} 
+}
+
+OUTPUT
+-------
+Student Rno  :101
+Student Name :AAA
+Student Per  :60.0
+---------------------------------
+Student Rno  :102
+Student Name :BBB
+Student Per  :70.0
+---------------------------------
+Roll Number :  101
+Name        :  AAA
+Percentage  :  60.0
+---------------------------------
+Roll Number :  102
+Name        :  BBB
+Percentage  :  70.0
+---------------------------------
+
+
+
+Setter & getter with user given values
+---------------------------------------
+import java.io.*;
+
+class Student
+{ 
+	private int rno;
+	private String name;
+	private double per;
+	
+	public void setRno(int rno) 
+	{
+		this.rno = rno;
+	}
+
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+
+	public void setPer(double per) 
+	{
+		this.per = per;
+	}
+
+	public int getRno()
+	{
+		return rno;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public double getPer()
+	{
+		return per;
+	}
+
+	public void display()
+	{
+		System.out.println("Roll Number :  " +  rno);
+		System.out.println("Name        :  " +  name);
+		System.out.println("Percentage  :  " +  per);
+		System.out.println("---------------------------------");
+	}
+}
+
+public class Demo
+{
+	public static void main( String[] args ) throws Exception
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.print("Enter the Roll Number :");
+		int rno = Integer.parseInt(br.readLine());
+
+		System.out.print("Enter Name :");
+		String name = br.readLine();
+
+		System.out.print("Enter Percentage :");
+		double per = Double.parseDouble(br.readLine());
+
+
+		Student s1 = new Student(); // [rno: 101 name:AAA  per:60.0 ]
+		
+		s1.setRno(z);
+		s1.setName(name);
+		s1.setPer(per);
+
+
+		System.out.println("Student Rno  :" +  s1.getRno());
+		System.out.println("Student Name :" +  s1.getName());
+		System.out.println("Student Per  :" +  s1.getPer());
+
+		System.out.println("---------------------------------");
+
+		
+	} 
+}
+
+
+Using Parameterized constructor assigning user's values
+-------------------------------------------------------
+import java.io.*;
+
+class Student
+{ 
+	private int rno;
+	private String name;
+	private double per;
+	
+	public Student(int rno, String name, double per)
+	{
+		this.rno  = rno;
+		this.name = name;
+		this.per  = per;
+	}
+
+	public void setRno(int rno) 
+	{
+		this.rno = rno;
+	}
+
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+
+	public void setPer(double per) 
+	{
+		this.per = per;
+	}
+
+	public int getRno()
+	{
+		return rno;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public double getPer()
+	{
+		return per;
+	}
+
+	public void display()
+	{
+		System.out.println("Roll Number :  " +  rno);
+		System.out.println("Name        :  " +  name);
+		System.out.println("Percentage  :  " +  per);
+		System.out.println("---------------------------------");
+	}
+}
+
+public class Demo
+{
+	public static void main( String[] args ) throws Exception
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.print("Enter the Roll Number :");
+		int rno = Integer.parseInt(br.readLine());
+
+		System.out.print("Enter Name :");
+		String name = br.readLine();
+
+		System.out.print("Enter Percentage :");
+		double per = Double.parseDouble(br.readLine());
+
+
+		Student s1 = new Student(rno,name,per); // [rno: 101 name:AAA  per:60.0 ]
+		
+		System.out.println("Student Rno  :" +  s1.getRno());
+		System.out.println("Student Name :" +  s1.getName());
+		System.out.println("Student Per  :" +  s1.getPer());
+
+		System.out.println("---------------------------------");
+
+		
+	} 
+}
+
+Note:
+====
+---> In Java, Array is dynamic
+		-- Array is created runtime using new
+
+---> In C array is Static(Fixed).
+		-- int a[3];
+
+		   n = 5  --> 2 ka shortage
+         n = 1  --> 2 ka wastage
+
+--> But, In Java eventhough array is dynamic, after creation it is static(fixed size)   
+
+=================================
+How to create 'n' object in Java
+=================================
+
+Version-1 : Using Constructor
+-----------------------------
+import java.io.*;
+
+class Student
+{ 
+	private int rno;
+	private String name;
+	private double per;
+	
+	public Student(int rno, String name, double per)
+	{
+    	this.rno  = rno;
+    	this.name = name;
+    	this.per  = per;
+	}
+	
+	public void display()
+	{
+		System.out.println("Roll Number :  " +  rno);
+		System.out.println("Name        :  " +  name);
+		System.out.println("Percentage  :  " +  per);
+		System.out.println("---------------------------------");
+	}
+}
+
+public class Demo
+{
+	public static void main( String[] args ) throws Exception
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.print("How many Students : ");
+		int n = Integer.parseInt(br.readLine());
+
+		Student S[] = new Student[3];  // I'm creating 'n' ref variable
+                            
+		for(int i=0; i<n; i++)
+		{
+			System.out.print("Enter the Roll Number :");
+			int r = Integer.parseInt(br.readLine()); // r=102
+
+			System.out.print("Enter the Name :");
+			String nm = br.readLine();  // nm =BBB
+
+			System.out.print("Enter the Percentage :");
+			double p = Double.parseDouble(br.readLine()); // p=70.0
+
+			 S[i] = new Student(r,nm,p); // Creating object
+		}
+
+		System.out.println("Student Information\n");
+                   
+		for(int i=0; i<n; i++)
+		{
+			S[i].display();
+		}
+	} 
+}
+
+
+
+
+
+
+
+Version-2 : Array of Object Using Setter and getter
+---------------------------------------------------
+import java.io.*;
+
+class Student
+{ 
+	private int rno;
+	private String name;
+	private double per;
+		
+	public void setRno(int rno) 
+	{
+		this.rno = rno;
+	}
+
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+
+	public void setPer(double per) 
+	{
+		this.per = per;
+	}
+
+	public int getRno()
+	{
+		return rno;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public double getPer()
+	{
+		return per;
+	}
+
+}
+
+public class Demo
+{
+	public static void main( String[] args ) throws Exception
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.print("How many Students : ");
+		int n = Integer.parseInt(br.readLine());
+
+		Student S[] = new Student[3];  // I'm creating 'n' ref variable
+                            
+		for(int i=0; i<n; i++)
+		{
+			System.out.print("Enter the Roll Number :");
+			int r = Integer.parseInt(br.readLine()); // r=102
+
+			System.out.print("Enter the Name :");
+			String nm = br.readLine();  // nm =BBB
+
+			System.out.print("Enter the Percentage :");
+			double p = Double.parseDouble(br.readLine()); // p=70.0
+
+			 S[i] = new Student(); // Creating object
+			
+			 S[i].setRno(r);
+			 S[i].setName(nm);
+			 S[i].setPer(p);
+		}
+
+
+		System.out.println("Student Information\n");
+                   
+		for(int i=0; i<n; i++)
+		{
+			System.out.println("Roll Number : " + S[i].getRno());
+			System.out.println("Name        : " + S[i].getName());
+			System.out.println("Percentage  : " + S[i].getPer());
+			System.out.println("--------------------------------");
+		}
+	} 
+}
+
+
+
+
+
+
+
+=================================================================
+
+There are 4 types of variable -
+-------------------------------
+	1. instance variable  -- heap
+	2. static variable or class variable  -- Method Area
+	3. parameter -- stack
+	4. local variable -- stack
+
+There are 2 types of methods -
+----------------------------------
+	1. non-static method
+	2. static method
+
+class A
+{
+	int i;  			// instance variable
+	static int j;	// static variable or class variable
+
+	void display(int k)
+	{
+      int l;
+
+	}
+
+	static void show()
+	{
+
+	}
+}
+
+static :
+---------
+--> class is a collection of static as well non-static member( Data + methods).
+--> static members are properties of a class
+--> non-static members are properties of a object.
+
+
+Q.Why class should have static data variables ?
+-----------------------------------------------
+ans : Sharing
+When objects want to share somthing(file, database, server) then that thing must be declare as a static.
+
+static Connection con;
+static FileReader f;
+
+Note:
+-----
+byte code file are loaded by class loader when first time class name is referred in a program.
+
+
+Example of Static:
+--------------------
+Keep track of how many objects are created in an Application.
+
+import java.io.*;
+class A 
+{ 
+ 	int i; 
+ 	static int c=0; 
+
+ 	A() 
+ 	{ 
+  		i=0; 
+  		c++; 
+ 	} 
+ 
+ 	A(int x) 
+ 	{ 
+  		i=x; 
+  		c++; 
+ 	} 
+ 
+ 	void display() 
+ 	{ 
+  		System.out.println(i); 
+ 	} 
+
+ 	static void show() 
+ 	{ 
+  		System.out.println("No. of objects created = " + c); 
+ 	} 
+} 
+
+
+public class Demo
+{
+	public static void main( String[] args )
+	{
+
+		A ob1 = new A();
+		A ob2 = new A(10);
+
+		ob1.display();
+		ob2.display();
+
+		A ob3 = new A(20);
+		ob3.display();
+
+
+		A.show();
+		
+          
+	} 
+}
+
+
+static kai-kai asate -
+	1. static variable
+	2. static method
+	3. static block
+
+
+Class load zhaly zhalya kai hote -
+	1. static variable get memory.
+	2. if your class has static block then it will be excuted
+
+
+
+Q. What is Method Area ?
+------------------------
+--> static variable
+--> final variable
+--> String constant pool "TCA", "SACHIN" 
+--> class cha byte code pan method area madhe store asato
+	 i.e class can have constructor and static and non-static methods cha code
+
+Heap : Instance varible
+-----
+class A
+{
+	int i,j; <---instance variable
+}
+
+
+Stack : local variable & paramters
+------
+class A
+{
+	
+	void display(int x)  <-- x is parameter
+	{
+		int y; <-- local variable
+	}
+}
+
+method area:
+-------
+class A
+{
+	static int m,n;
+}
+
+What is Packages in Java?
+---------------------------
+--> It is collection of classes, interfaces, subpackages.
+--> Pacakge is nothing but floder.
+
+
+import java.io.*;
+import java.util.*;
+import java.util.Date;
+
+
+================================================
+Eclipse and IntelliJ Idea IDE Configuration
+================================================
+
+
+Q. What is IDE ?
+-----------------
+--> IDE stands for Integrated Developement Environment
+--> It is a software component which provides platform to develope and run Java Program.
+--> IDE Provides -
+	1. Editor
+	2. Java Compiler
+	3. JDK
+	4. Debugger
+
+---------------------------------------------------
+
+
+============
+Inheritance
+============
+--> When one class aquires properties from another class is called as Inheriatanct.
+					OR
+--> When property of one class is avaialable in another class is called as Inheritace.
+
+Use of Inheritance
+--------------------
+1. Extendibility
+2. Reusability
+
+
+Inherit
+
+class A
+{
+	
+
+}
+
+class B
+{
+	
+}
+
+
+import java.io.*;
+
+class A
+{
+	public void display()
+	{
+		System.out.println("I am in A's Display !!");
+	}
+}
+
+class B extends A
+{
+	public void show()
+	{
+		System.out.println("I am in B's Show !!");
+	}
+}
+class C extends B   // display, show, print
+{
+	public void print()
+	{
+		System.out.println("I am in C's print !!");
+	}
+}
+public class Demo
+{
+	public static void main(String[] args) 
+	{
+
+		C ob = new C();
+		ob.display();   // A feature  - BE, MT
+		ob.show();      // B feature  - WM
+		ob.print();
+		
+	}
+}
+
+import java.io.*;
+
+class A
+{
+	public void display()
+	{
+		System.out.println("I am in A's Display !!");
+	}
+}
+
+class B extends A
+{
+	public void display()
+	{
+		super.display();
+		System.out.println("I am in B's Display !!");
+	}
+}
+
+class C extends B 
+{
+	public void display()
+	{
+		super.display();
+		System.out.println("I am in C's Display   !!");
+	}
+}
+
+public class Demo
+{
+	public static void main(String[] args) 
+	{
+
+		C ob = new C();
+		
+		ob.display();   
+		
+		
+	}
+}
+
+
+Method Overiding
+------------------
+--> When declaration/prototype/Signature of method in Superclass & Subclass is same then it is called as Method Overiding
+--> When you have method over-riding then Child Memebrs over-rides Parent members.
+
+
+final int a = 10;  // declaring constant
+a++;  ---> error
+
+final
+------
+1. final variable
+2. final method 
+	--> When I want to restrict method overriding
+3. final class
+	--> No class will inherit final class
+	--> Using final class we restrict inheritance
+
+
+Note: interface la 'final' lau nay !!
+
+final void display()
+{
+	
+}
+
+--------------------------
+
+import java.io.*;
+
+class A
+{
+	public void display()
+	{
+		System.out.println("I am in A's Display !!");
+	}
+}
+
+class B extends A
+{
+	public void display()
+	{
+		super.display();
+		System.out.println("I am in B's Display !!");
+	}
+}
+
+public class Demo
+{
+	public static void main(String[] args) 
+	{
+		A ob = new B();  // Parents points to child
+		ob.display();   
+	}
+}
+
+
+*Notes - 11-10-2025*
+
+Can we inherit static Methods
+--------------------------------
+Yes
+
+import java.io.*;
+
+class A
+{
+	public static void display()
+	{
+		System.out.println("I am in A's Display !!");
+	}
+}
+
+class B extends A 
+{
+
+}
+
+public class Demo
+{
+	public static void main(String[] args) 
+	{
+		B.display();
+	}
+}
+
+
+Static method can not be over-ride
+-----------------------------------
+import java.io.*;
+
+class A
+{
+	public static void display()
+	{
+		System.out.println("I am in A's Display !!");
+
+	}
+}
+
+class B extends A 
+{
+	public static void display()
+	{
+		System.out.println("I am in B's Display !!");
+	}
+}
+
+public class Demo
+{
+	public static void main(String[] args) 
+	{
+		A ob = new B();
+		ob.display();
+	}
+}
+----------------------------------------------------------
+
+Inheritance with Constructor Calling sequence
+==============================================
+--> Whenever you create object of child class then automatically child class constructor gets called, to call parent class constructor from child class use super().
+
+--> If 0-arg constructor(Default constructor) does have call to parent constructor then still JVM will by default call Parents Default constructor.
+
+--> In case of Parameterized constructor of child class, you have to call parents parameterized constructor, if you dont call parents constructor explicitely then JVM calls by default parent's 0-arg/default constructor. 
+
+--> super() statment should be first statement constructor.
+
+
+Example:
+========
+
+import java.io.*;
+
+class A
+{
+	private int i;
+
+	public A()
+	{
+		i=88;
+		System.out.println("A's Default/0-Arg Constructor !!");
+	}
+
+	public A(int i)
+	{
+		this.i = i;
+		System.out.println("A's Parameterized Constructor!!");
+	}
+
+	public void display()
+	{
+		System.out.println("I am in A's Display !!");
+		System.out.println("Value of I :" + i);
+	}
+}
+
+class B extends A 
+{
+	private int j;
+
+	public B()
+	{
+		super(); // It is optional
+		j=99;
+		System.out.println("B's Default/0-Arg Constructor !!");
+
+	}
+
+	public B(int i,int j)
+	{
+		super(i);
+		this.j = j;
+		System.out.println("B's Parameterized Constructor!!");
+	}
+
+	public void display()
+	{
+		super.display(); // to access private members of Parent
+		System.out.println("I am in B's Display !!");
+		System.out.println("Value of J :" + j);
+	}
+}
+
+public class Demo
+{
+	public static void main(String[] args) 
+	{
+		B ob1 = new B();
+		ob1.display();
+
+		System.out.println("--------------------------------");
+		B ob2 = new B(11,22);  
+		ob2.display();
+	}
+}
+
+
+
+
+
+
+
+Q. Sir, if both of the instance variables of parent and child have the same name, then what happens?
+============================================================
+--> It will work.
+
+import java.io.*;
+
+class A
+{
+	private int i;
+
+	public A()
+	{
+		i=88;
+		System.out.println("A's Default !!");
+	}
+
+	public A(int i)
+	{
+		this.i = i;
+		System.out.println("A's Parameterized !!");
+	}
+
+	public void display()
+	{
+		System.out.println("I am in A's Display !!");
+		System.out.println("Value of I :" + i);
+	}
+}
+
+class B extends A 
+{
+	private int i;
+
+	public B()
+	{
+		super(); // It is optional
+		i=99;
+		System.out.println("B's Default !!");
+
+	}
+
+	public B(int x, int y)
+	{
+		super(x);
+		this.i = y;
+		System.out.println("B's Parameterized !!");
+	}
+
+	public void display()
+	{
+		super.display(); // to access private members of Parent
+		System.out.println("I am in B's Display !!");
+		System.out.println("Value of B'I :" + i);
+		
+	}
+}
+
+public class Demo
+{
+	public static void main(String[] args) 
+	{
+		B ob1 = new B();
+		ob1.display();
+
+		System.out.println("--------------------------------");
+		B ob2 = new B(11,22);  //[i:0  j:22]
+		ob2.display();
+	}
+}
+-----------------------------------------------------------------
+
+Write a Program -
+===================
+Student(rno, name, per)
+Student2020(email, whatsapp)
+
+import java.io.*;
+
+
+class Student
+{
+	private int rno;
+	private String name;
+	private double per;
+
+	public Student()
+	{
+		rno = 0;
+		name ="";
+		per = 0.0;
+	}
+	public Student(int rno, String name, double per)
+	{
+		this.rno = rno ;
+		this.name = name;
+		this.per = per;
+	}
+	public void display()
+	{
+		System.out.println("Roll Number : " + rno);
+		System.out.println("Name        : " + name);
+		System.out.println("Percentage  : " + per );
+	}
+}
+
+class Student2020 extends Student  
+{
+	private String email;
+	private String whatsapp;
+
+	public Student2020()
+	{
+		super();
+		email="";
+		whatsapp="";
+	}
+	public Student2020(int rno, String name, double per, String email, String whatsapp)
+	{
+		super(rno,name,per);
+		this.email = email;
+		this.whatsapp = whatsapp;
+	}
+
+	public void display()
+	{
+		super.display();
+		System.out.println("Email       :  " + email);
+		System.out.println("whatsapp    :  " + whatsapp);
+	}
+}
+
+public class Demo
+{
+	public static void main(String[] args) 
+	{
+		Student2020 ob = new Student2020(101,"Sachin", 75, "sac@gmail.com","998877");
+		ob.display();
+	}
+}
+
+GraduateStudent g1 = new GraduateStudent("Sachin", 23, 101, "Computer Science", "Fullstack Java Developer");
+
+System.out.println("--- Student Information ---");
+g1.display();
+
+
+Abstract class
+---------------
+--> it is a class can have one or more concrete or abstract methods.
+
+abstract class A
+{
+    public void f1()    // Concrete Method
+    {
+        System.out.println("A-F1");
+    }
+
+    abstract public void f2();  // Abstract method
+}
+
+class B extends A 
+{
+    public void f2()
+    {
+       System.out.println("A-F2"); 
+    }
+    public void f3()
+    {
+        System.out.println("B-F3");
+    }
+}
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        B ob = new B();
+        ob.f1();
+        ob.f2();
+        ob.f3();
+    }
+}
+
+Note: 
+-----
+You can not instantiate Abstract class i.e you can not create object of abstract class.
+But you can create object variable(Reference) of abstract class.
+
+Example:
+		A ob = new A(); <--- Error
+		A ob = null;    <--- Valid
+		A ob = new B(); <--- Valid
+
+import java.io.*;
+
+abstract class A
+{
+    public void f1()    // Concrete Method
+    {
+        System.out.println("A-F1");
+    }
+
+    abstract public void f2();  // Abstract method
+}
+
+class B extends A 
+{
+    public void f2()
+    {
+       System.out.println("A-F2"); 
+    }
+    public void f3()
+    {
+        System.out.println("B-F3");
+    }
+}
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        A ob = new B();
+        ob.f1();
+        ob.f2();
+        // ob.f3();  <--- Error
+    }
+}
+
+Note:
+-----
+The class which is inheriting abstract class may provide implementation for abstract 
+methods. There is no "compulsion" on subclass to provide implementation for abstract 
+method. In such case subclass is also declared as abstract class. 
+
+import java.io.*;
+
+abstract class A
+{
+    public void f1()    
+    {
+        System.out.println("A-F1");
+    }
+
+    abstract public void f2();  
+}
+
+abstract class B extends A 
+{
+    
+    public void f3()
+    {
+        System.out.println("B-F3");
+    }
+}
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        B ob = new B();  // Error
+     
+    }
+}
+
+
+Note:
+-----
+Abstract class can have constructor.
+
+import java.io.*;
+
+abstract class A
+{
+    A()
+    {
+        System.out.println("A-Constructor");
+    }
+    public void f1()    // Concrete Method
+    {
+        System.out.println("A-F1");
+    }
+
+    abstract public void f2();  // Abstract method
+}
+
+class B extends A 
+{
+    B()
+    {
+       System.out.println("B-Constructor");     
+    }
+    public void f2()
+    {
+       System.out.println("A-F2"); 
+    }
+
+    public void f3()
+    {
+        System.out.println("B-F3");
+    }
+}
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        B ob = new B();
+    }
+}
+
+Note:
+-----
+1. Constructor cannot be abstract. 
+2. Abstract method cannot be private. 
+3. Abstract method cannot be static. 
+4. Abstract method cannot be final. 
+
+--> Inheritance is mandatory for abstract class because implementation of abstract 
+method is written in child class. 
+
+Program
+=======
+import java.io.*;
+
+abstract class Staff 
+{
+    public String name;
+    public String address;
+    
+    public Staff(String name, String address) 
+    {
+        
+        this.name = name;
+        this.address = address;
+    }
+
+    abstract public void display();
+}
+
+class FullTimeStaff extends Staff 
+{
+    String dept;
+    double salary;
+
+    public FullTimeStaff(String name, String address, String dept, double salary)
+    {
+        super(name,address);
+        this.dept = dept;
+        this.salary = salary;
+    }
+
+    public void display()
+    {
+       System.out.println("Name   : " +  name);
+       System.out.println("Addres : " + address);
+       System.out.println("Dept   : " + dept);
+       System.out.println("Salary : " +  salary); 
+    }
+}
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        FullTimeStaff fts = new FullTimeStaff("AAA","Pune","CS",10000.0); // [name: address: dept:  salary]
+
+        fts.display();
+
+        PartTimeStaff pts = new PartTimeStaff("BBB","Mumbai",3,100.0); // [name: address: dept:  salary]
+
+        pts.display();
+    }
+}
+
+----------------------------------------------
+
+==========
+Interface
+==========
+--> It is a like class where by default data members(Field) are 'public static final' and methods are abstract.
+
+Example:
+--------
+import java.io.*;
+
+interface A
+{
+   public static final int  i = 10;
+   public abstract void display();
+}
+
+class B implements A 
+{
+    public void display()
+    {
+        System.out.println("B-display :" + A.i);
+    }
+
+    public void show()
+    {
+        System.out.println("B-show : " +  A.i);
+    }
+}
+
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+
+          B ob = new B();
+          ob.display();
+          ob.show();    
+          System.out.println("Value of I : " + A.i);
+    }
+}
+
+Note:
+-----
+--> We can not intiatiate interface but we can declare reference variable of interface.
+	
+	A ob = new A();  ---> Error
+	A ob = new B();  ---> Valid
+	A ob = null;     ---> Valid
+
+--> If one class is implementing interface then it is "compulsory" for that class to provide definition for 'all methods' that are declared in an interface.
+
+
+Example:
+--------
+import java.io.*;
+
+interface Shape
+{
+    public static final double PI=3.14;
+    public abstract void printArea(); 
+}
+
+class Circle implements Shape
+{
+    private double radius;
+
+    public Circle(double radius)
+    {
+        this.radius = radius;
+    }
+
+    public void printArea()
+    {
+        double ans = Shape.PI * radius * radius;
+        System.out.println("Area of Circle :" +  ans); 
+    }
+}
+
+class Cylinder implements Shape
+{
+    private double radius;
+    private double height;
+
+    public Cylinder(double radius, double height)
+    {
+        this.radius = radius;
+        this.height = height;
+    }
+
+    public void printArea() // 2πrh+2πr2 
+    {
+        double ans = (2*Shape.PI*radius*height) + (2*Shape.PI*radius*radius);
+        System.out.println("Area of Cylinder : " + ans);
+    }
+}
+
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+
+        Circle circle =  new Circle(2.5);
+
+        Cylinder cylinder = new Cylinder(2.5, 5.0);
+
+        circle.printArea();
+        cylinder.printArea();
+         
+    }
+}
+
+
+Marker Interface
+==================
+
+interface Serilizable
+{
+	
+}
+
+class Teacher
+{
+	
+}
+
+class Student implments Serilazable
+{
+	
+}
+
+Student ob = new Student()
+ob.display();
+
+send(ob)
+save(ob)
+
+a.jpeg
+
+interface Clonable
+{
+	
+}
+
+class Student implements Clonable
+{
+	
+}
+
+Student ob1
+
+Student ob2 = ob1.clone();
+
+Functional Interface
+---------------------
+@FunctionalInterface
+interface A
+{
+	abstract public void display();
+}
+
+class B implements A
+{
+	public void display()
+	{
+		System.out.println("I am in display");
+	}
+	
+}
+
+
+As per new featurs of Java Interface can have -
+	1. default method
+	2. static method
+	3. private method
+	All are concrete methods.
+
+interface I
+{
+	static void display()
+	{
+		System.out.println("I am in display !!!");
+	}
+}
+
+
+package com.tca;
+
+interface I
+{
+	default void display()
+	{
+		System.out.println("I am in display !!!");
+		String g = giveGrade(20);
+		System.out.println("Your Grade : " + g);
+	}
+	
+	private String giveGrade(double per)
+	{
+		if(per >= 70 )
+			return "Distinction";
+		else if (per >=60)
+			return "First class";
+		else if(per>=40)
+			return "Pass class";
+		else 
+			return "fail";
+	}
+	
+	abstract void show();
+	
+}
+
+class Xyz implements I
+{
+
+	@Override
+	public void show() 
+	{
+		System.out.println("I am in show");
+	}
+}
+
+public class Demo 
+{
+
+	public static void main(String[] args) 
+	{
+		Xyz ob = new Xyz();
+		ob.display();
+		ob.show();
+	}
+}
+
+--------------------------------------------------------------------
+
+
+*What is Inner Class ?*
+======================
+--> When one class is defined "inside a class" is called inner class(Nested class).
+
+Example:
+import java.io.*;
+
+class Outer
+{
+    int i=11;
+
+    class Inner
+    {
+        int j=22;
+
+        void display()
+        {
+            System.out.println("I am in display");
+            System.out.println("Value of J :" + j);
+            System.out.println("Value of I :" + i);
+        }
+
+    }
+
+}
+
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+        Outer outer = new Outer();
+
+        Outer.Inner iob = outer.new Inner();
+        iob.display();
+      
+    }
+}
+
+
+Demo.class
+Outer.class
+Outer$Inner.class
+
+
+Local inner class:
+-------------------
+--> When one class is defined inside a class is called as Local inner class.
+
+import java.io.*;
+
+class Outer
+{
+    int i=11;
+
+    void show()
+    {
+        int k = 33;
+
+        class Inner
+        {
+            int j=22;
+
+            void display()
+            {
+                System.out.println("I am in display !! ");
+                System.out.println("Value of J :" + j);
+            }
+        }
+
+        System.out.println("I am in show !!");
+        System.out.println("Value of I :" + i);
+        System.out.println("Value of K :" + k);
+
+        Inner ob = new Inner();
+        ob.display();
+    }
+}
+
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+        Outer outer = new Outer();
+        
+        outer.show();
+       
+    }
+}
+
+Outer$1Inner.class
+
+Note:
+-----
+Object of Local inner class is always created inside a method where class is declared.
+
+
+
+AWT-SWING
+	Keyboard, Mouse 
+
+Annonymous Inner Class
+=======================
+
+
+
+
+
+
+Annonymous --> Nameless
+
+class 
+{
+	
+}
+
+
+
+Fresher View
+=============
+import java.io.*;
+
+interface Notification
+{
+    public abstract void send();
+}
+
+class Email implements Notification
+{
+    public void send()
+    {
+        System.out.println("Notification Send through Email... !!");
+    }
+}
+
+
+class WhatsApp implements Notification
+{
+    public void send()
+    {
+        System.out.println("Notification Send through WhatsApp.. !!");
+    }
+}
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+       Notification ob = new WhatsApp();
+       ob.send();
+       
+    }
+}
+
+
+Experienced view
+================
+import java.io.*;
+
+interface Notification
+{
+    public abstract void send();
+}
+
+
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+      
+      Notification ob = null;
+
+      ob = new Notification()
+      {
+            public void send()
+            {
+                System.out.println("Notification Send through Email... !!");
+            }
+      };
+       
+      ob.send();
+
+      ob = new Notification()
+      {
+            public void send()
+            {
+               System.out.println("Notification Send through WhatsApp... !!"); 
+            }
+      };
+
+      ob.send();
+
+      ob = new Notification()
+      {
+            public void send()
+            {
+                System.out.println("Notification Send through Telegram... !!"); 
+            }
+      };
+
+      ob.send();
+    }
+}
+
+Inner class
+============
+1. Inner class
+2. Local Inner class
+3. Annonymous Inner class
+
+------------------------------------------------------------------
+
+
+Method Overloading (Compiler)
+-------------------
+--> When one class is having more than one method with "same name" and "different parameter sequences" is called as Method Overloading.
+
+import java.io.*;
+
+class A
+{
+    public void display()
+    {
+        System.out.println("You called : display() !!");
+    }
+
+    public void display(int i)
+    {
+         System.out.println("You called : display(int) !!");
+        // System.out.println("Value of I : " + i);
+    }
+
+    public void display(double d)
+    {
+         System.out.println("You called : display(double) !!");
+        // System.out.println("Value of D : " + d);
+    }
+
+    public void display(int i, double d)
+    {
+        System.out.println("You called : display(int,double) !!");
+    }
+
+    public void display(double d, int i)
+    {
+        System.out.println("You called : display(double, int) !!");
+    }
+}
+
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+      
+      A ob = new A();
+      ob.display();
+      ob.display(11);
+      ob.display(3.5);
+      ob.display(10, 2.5);
+      ob.display(99.23, 88);
+      
+    }
+}
+
+We can overload main() method
+==============================
+import java.io.*;
+
+
+
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("Main started !!"); 
+
+        Demo.main(10);
+        Demo.main(2.5);
+
+    }
+
+    public static void main(int i)
+    {
+        System.out.println("Main(int) !!");
+    }
+
+    public static void main(double i)
+    {
+        System.out.println("Main(double) !!");
+    }
+}
+
+We can overload Constuctor
+==========================
+
+class A
+{
+	int i;
+	double d;
+
+	A()
+	{
+		i=0;
+		d=0.0;
+	}
+
+	A(int i, double d)
+	{
+		this.i = i;
+		this.d = d;
+	}
+}
+
+Note:
+=====
+--> To implement overloading concept we dont need inheritance.
+--> In method overloading return type, private, protected, default, static, abstract is not considered. 
+
+Q. Is it correct overloading ?
+-------------------------------
+Ans: No
+
+int display()
+{
+	
+}
+
+double display()
+{
+	
+}
+
+ob.display();  --> Error
+
+----------------------------------------------------------------------------
+
+
+
+*Polymorphism*
+---------------
+--> An ability to have more than one "forms" or if one thing is existed in more than one form is called as Polymorphism. 
+--> 2 Types
+	1. Method Overloading --> Compile Time Polymorphism 
+									  Early Binding 
+									  Static Binding
+
+	2. Method Overiding   --> Run Time Polymorphism
+									  Late binding
+									  Dynamic Binding
+
+Run Time Polymorphism
+-----------------------
+--> Run Time Polymorphism he picture madhe teavhach ananyach, jeva parent class cha variable child class la point karat asel.
+								OR
+"Runtime polymorphism occurs only when the parent class reference (variable) points to the child class object."
+	
+	Parent P = new Child();
+
+At runtime, the actual method called depends on the object type (child), even though the reference variable is of the parent type.
+
+
+---------------------------------------------------------------
+
+*'Object' and 'Class' navache class*
+======================================
+"Jiska koi nahi hota... uska khuda hota hai !!"
+
+"Jis class ka kio parent nahi hot.... Uska parent by default 'Object' class hota hai"
+
+Example:
+---------
+import java.io.*;
+
+class A 
+{
+    void display()
+    {
+        System.out.println("A-display");
+    }
+}
+
+class B extends A 
+{
+
+}
+
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+        A ob = new A();
+        
+        System.out.println( ob.getClass() );
+        System.out.println( ob.getClass().getSuperclass() );
+
+        B bob = new B();
+        System.out.println( bob.getClass().getSuperclass() );
+
+        Demo d = new Demo();
+        System.out.println( d.getClass().getSuperclass() );
+
+    }
+}
+
+Another Approach
+=================
+import java.io.*;
+
+class A 
+{
+    void display()
+    {
+        System.out.println("A-display");
+    }
+}
+
+class B extends A 
+{
+
+}
+
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+        
+        Class<A>  c1 = A.class;  // new Class();
+        System.out.println(c1.getSuperclass());
+
+        Class<B>  c2 = B.class;
+        System.out.println(c2.getSuperclass() );
+
+        Class<Demo>  c3 = Demo.class;
+        System.out.println(c3.getSuperclass() );
+
+
+    }
+}
+
+
+Note:
+-----
+--> Every class bydefault has 'Object' class as parent class.
+--> Object class's does not have any Parent.
+
+			Class<Class>  c1 = Class.class;  
+        System.out.println(c1.getSuperclass());  //java.lang.Object
+
+
+         Class<Object>  c1 = Object.class;  
+        System.out.println(c1.getSuperclass()); // null
+
+
+toString() method is responsible to print object's reference.
+
+
+class Object
+{
+	
+}
+
+class Class
+{
+	
+}
+
+
+Java madhe 'Class' navacha class ka vaprayacha 
+Ans: Jar mala ekhadya class la introspect karayche asel tar 'Class' class vaprayacha.
+Introspect karane manje class cha memebers chi nave print karane.
+
+Introspect karayala ji functions/methods tumi vapranar aahat tya methods na 'Refelction API'.
+eg:
+	Suppose we have a Student class, After Introspection we will get - 
+	rno
+	name
+	per
+	Student()
+	Stdent(int,String, double)
+	setRno()
+	getRno()
+	:
+	:
+	display()
+	toString()
+====================================================
+
+Student ob = new Student();
+
+Introspection
+
+
+#incluce<iostream>
+
+int main()
+{
+	cout<<"Hello World";
+}
+
+Access Modifiers
+=================
+1. public
+2. protected : same class & child only can access
+					doesnt matter child class belong to any package.
+3. Default
+4. private
+
+--> Above access modifiers can be applied on Fields as well as on methods.
+--> 'private' memebers are accessible "only in same class" where they have declared.
+
+
+===================
+Exception Handling
+===================
+
+Error
+-----
+1. Compile time error (Syntax Error)
+2. Logical Error
+
+	Example:
+		int a = 3;
+      int b = 5;
+      int ans = a - b; 
+      System.out.println(ans);
+
+3. Runtime Error
+	public static void main(String[] args) 
+    {
+        int x, y;
+
+        main(args);
+    }
+
+   java.lang.StackOverflowError
+
+
+
+Exception Vs Error
+--------------------
+Exception comes at runtime
+Error     comes a runtime
+Error     comes a compile time
+
+
+
+*Exception Handling*
+==================
+--> When a problem or unexpected event is occurred at runtime, and that problem can be solved at runtime itself, such problem is called as 'Exception'.
+--> The mechanism of solving problem runtime is called as Exception Handling. 
+
+Exceptions can be categorized in 2 types – ------------------------------------------- 
+	1. Checked Exception 	(Compile Time Exception)
+		-- Comipler checks for these exeception
+
+	2. Unchecked Exception  (Runtime Exception)
+		-- Comipler does not checks for these exeception
+		--> NumberFormatException, ArrayIndexOutOfBoundsException
+
+		int a[3];
+		a[i]
+
+What Happend when exception Occurs -
+-------------------------------------
+Exception is runtime problem, if it is not handled then default exception handler of JVM terminates the program abnormally. 
+If we do not want that then "we must handle the Exception". 
+
+import java.io.*;
+
+class A
+{
+    void display()
+    {
+
+    }
+}
+class Demo 
+{
+    public static void main(String[] args) throws IOException 
+    {
+        System.out.println("I am starting.....");
+        A  ob = null; 
+        ob.display();
+  
+        System.out.println("I am endling.....");
+    }
+}
+
+
+-----------------------------------------------
+
+Using Scanner:
+import java.io.*;
+import java.util.*;
+
+
+
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("App Started.....");
+        Scanner sc = new Scanner(System.in);
+        
+        try
+        {
+            System.out.print("Enter the First number : ");
+            int a =  sc.nextInt();
+            System.out.print("Enter the Second number : ");
+            int b =  sc.nextInt();
+            int ans = a / b;
+            System.out.println("Division:"+ ans);
+        }
+        catch(ArithmeticException ae)
+        {
+            System.out.println("Problem :  Division is not Possible bcz denomintaor is zero !!");
+        }
+        catch(InputMismatchException ie)
+        {
+            System.out.println("Problem : Given input is not a Number !!!");
+        }
+        catch(Exception e)
+        {
+            System.out.println("Unkown Problem " + e );
+        }
+
+        System.out.println("App Ended.....");
+    }
+}
+
+Using BufferedReader
+---------------------
+import java.io.*;
+import java.util.*;
+
+class Demo 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("App Started.....");
+       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        try
+        {
+
+            System.out.print("Enter the First number : ");
+            int a =  Integer.parseInt(br.readLine());
+            System.out.print("Enter the Second number : ");
+            int b =  Integer.parseInt(br.readLine());
+            int ans = a / b;
+
+            System.out.println("Division is "+ ans);
+        }
+        catch(ArithmeticException ae)
+        {
+            System.out.println("Problem :  Division is not Possible bcz denomintaor is zero !!");
+        }
+        catch(NumberFormatException ne)
+        {
+            System.out.println("Problem : Given input is not a Number !!!");
+        }
+        catch(IOException ie)
+        {
+            System.out.println("I/O Problem : Unable to read Input !!");
+        }
+        catch(Exception e)
+        {
+            System.out.println("Unkown Problem " + e );
+            e.printStackTrace();
+        }
+        
+
+        System.out.println("App Ended.....");
+    }
+}
+
+
+throws : 
+======
+--> used to throw the exception at caller
+	1. main() throws --> JVM
+	2. display() throws --> main
+
+
+
+
+
+
+
+
+
+
+Q. Write a program which accepts the string and prints it Uppercase.
+---------------------------------------------------------------------
+
+package com.tca;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class Demo {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("App Started.....");
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				
+		try
+		{
+			System.out.print("Enter the String  : ");
+			String s = br.readLine();
+			String upperStr = s.toUpperCase();
+			System.out.println("Upper case of given String  : " + upperStr);
+		}
+		catch(IOException ie)
+		{
+			System.out.println("I/O Problem :  Unable to read Input !!");
+		}
+		finally
+		{
+			
+			try 
+			{
+				br.close();	
+			} 
+			catch (IOException e) 
+			{
+				System.out.println("Problem While closing resource !!");
+			}
+			
+		}
+		
+		System.out.println("App Ended.....");
+
+	}
+
+}
+
+======================================================================
+
+Use of try-with resrouce:
+------------------------
+To avoid messyness or to make code more readble java has introduced try-with-resource concept.
+
+package com.tca;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class Demo {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("App Started.....");
+		
+		
+				
+		try( BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); )
+		{
+			System.out.print("Enter the String  : ");
+			String s = br.readLine();
+			String upperStr = s.toUpperCase();
+			System.out.println("Upper case of given String  : " + upperStr);
+		}
+		catch(IOException ie)
+		{
+			System.out.println("I/O Problem :  Unable to read Input !!");
+		}
+		
+		
+		System.out.println("App Ended.....");
+
+	}
+
+}
+
+How Autoclosable works
+=========================
+package com.tca;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+class A implements AutoCloseable
+{
+
+	@Override
+	public void close() throws Exception 
+	{
+		System.out.println("Hurryyyy... I understooed");
+		
+	}
+	
+}
+
+public class Demo {
+
+	public static void main(String[] args) throws Exception 
+	{
+		try(A ob = new A();)
+		{
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+
+}
+
+
+
+How to handle the Exception ?
+================================
+Using -
+	1. try
+		-- It contains block of code which I want to monitor.
+	2. catch
+		--  It contains exception handling Logic
+	3. finally
+		-- It will be executed whether exception is occured or not
+		-- Use: Resources close
+	4. throws
+		-- ekhydya method la exception handle karyache nahi ye, then it will throw that exception to it caller
+	5. throw
+		-- It is used to throw userdefined Exception class che object.
+
+
+
+Userdefined Exception
+------------------------
+import java.io.*;
+
+class TemperatureException extends Exception 
+{
+    TemperatureException(String msg)
+    {
+        super(msg);
+    }
+}
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("App Started.....");
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        try 
+        {
+            System.out.print("Enter the Temperature : ");
+            double temp = Double.parseDouble(br.readLine());
+
+            if(temp > 100)
+            {
+                throw new TemperatureException("Temperature is very High !!");
+            }
+
+            System.out.println("Temperature is Under Control !!");
+
+        }
+        catch(IOException ie)
+        {
+            System.out.println("I/O Problem : Unable to read Input !!");
+        }
+        catch(NumberFormatException ne)
+        {
+            System.out.println("Problem : Given input is not a Number !!!");
+        }
+        catch(TemperatureException te)
+        {
+            System.out.println("Shut downing the sytem !! --> " + te);
+            // server.shutdown();
+            te.printStackTrace();
+
+        }
+
+
+        System.out.println("App Ended.....");
+    }
+}
+
+
+
+Assignment:
+-----------
+class InvalidFeesException extends Exception
+{
+	
+}
+
+
+
+Assertion
+==========
+
+import java.util.*;
+
+
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc =  new Scanner(System.in);
+        int balance = 5000;
+
+        System.out.print("Enter the amount to withdraw : ");
+        int amount = sc.nextInt();
+
+        assert amount>0 : " Invalid amount is given !";
+        assert amount < balance : "Insufficient Balance !";
+
+        balance = balance - amount;
+        System.out.println("Withdrawn is Successfull !!");
+        System.out.println("Remaining Balance : " +  balance);
+    }
+}
+
+
+
+File Handling
+===============
+--> File is a logical entity or medium where infomation/data is stored.
+--> On a file we can perform operations like creating a file, reading, writing , closing, deleting file, performing such operations is called a file handling.
+--> Java is Object oriented programming Language so to perform file handling java has given set of classes.
+Example:
+
+'File' class : It is used to access meta data about file.
+
+'FileReader' class : It is used to read content of text file
+'FileWriter' class : It is used to write into a text file
+
+'FileInputstream' class : It is used to read content of binary file
+'FileOutputstream' class : It is used to write into a binary file
+
+How to accept file name from command line arguments
+-------------------------------------------------------
+import java.io.*;
+
+public class Demo
+{
+    public static void main(String[] args)  // args[0]: a.txt
+    {
+        File f = new File(args[0]);
+
+        if ( ! f.exists() )
+        {
+            System.out.println(args[0] + " : File Does not Exist !!");
+            System.exit(0);
+        }
+
+        if( ! f.isFile())
+        {
+            System.out.println(args[0] + " : Given name is not a File !");
+            System.exit(0);
+        }
+
+        System.out.println(args[0] + ": Given name is a valid file name");
+    }
+}
+
+
+
+How to accept file name from user
+--------------------------------------
+
+import java.io.*;
+
+public class Demo
+{
+    public static void main(String[] args) throws IOException // args[0]: a.txt
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter File Name : ");
+        String fname =  br.readLine();
+
+        File f = new File(fname);
+
+        if ( ! f.exists() )
+        {
+            System.out.println(fname + " : File Does not Exist !!");
+            System.exit(0);
+        }
+
+        if( ! f.isFile())
+        {
+            System.out.println(fname + " : Given name is not a File !");
+            System.exit(0);
+        }
+
+        System.out.println(fname + ": Given name is a valid file name");
+      
+    }
+}
+
+
+Q. How to print Meta data about a File
+========================================
+import java.io.*;
+
+public class Demo
+{
+    public static void main(String[] args) throws IOException // args[0]: a.txt
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter File Name : ");
+        String fname =  br.readLine();
+
+        File f = new File(fname);
+
+        if ( ! f.exists() )
+        {
+            System.out.println(fname + " : File Does not Exist !!");
+            System.exit(0);
+        }
+
+        if( ! f.isFile())
+        {
+            System.out.println(fname + " : Given name is not a File !");
+            System.exit(0);
+        }
+
+        System.out.println("File Name : " + f.getName());
+        System.out.println("File Path : " + f.getAbsolutePath());
+        System.out.println("File Size : " + f.length());
+        System.out.println("Readable  : " + f.canRead());
+        System.out.println("Writable  : " + f.canWrite());
+      
+    }
+}
+
+Q. Print metadata about a Directory
+=====================================
+import java.io.*;
+
+public class Demo
+{
+    public static void main(String[] args) throws IOException // args[0]: a.txt
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter Directory Name : ");
+        String dname =  br.readLine();
+
+        File f = new File(dname);
+
+        if ( ! f.exists() )
+        {
+            System.out.println(dname + " : Directory Does not Exist !!");
+            System.exit(0);
+        }
+
+        if( ! f.isDirectory())
+        {
+            System.out.println(dname + " : is not a Directory !");
+            System.exit(0);
+        }
+
+        System.out.println("File Name : " + f.getName());
+        System.out.println("File Path : " + f.getAbsolutePath());
+        System.out.println("File Size : " + f.length());
+        System.out.println("Readable  : " + f.canRead());
+        System.out.println("Writable  : " + f.canWrite());
+      	
+    }
+}
+
+Q. print contents of given directory
+--------------------------------------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) throws IOException // args[0]: a.txt
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter Directory Name : ");
+        String dname =  br.readLine();
+
+        File f = new File(dname);
+
+        if ( ! f.exists() )
+        {
+            System.out.println(dname + " : Directory Does not Exist !!");
+            System.exit(0);
+        }
+
+        if( ! f.isDirectory())
+        {
+            System.out.println(dname + " : is not a Directory !");
+            System.exit(0);
+        }
+
+       String names[] = f.list(); //names--> 0: "a.txt"  1: "b.txt"
+
+      System.out.println("No. of Entries : " +  names.length);
+       System.out.println("Contets of Directory : ");
+
+       for( String fn : names)
+       {
+            System.out.println(fn);
+       }
+
+/*
+       for(int i=0; i< names.length; i++)
+       {
+            System.out.println(names[i]);
+       }
+*/      
+    }
+}
+
+Q. Print count of files and Directories
+------------------------------------------
+
+import java.io.*;
+
+
+public class Demo
+{
+    public static void main(String[] args) throws IOException // args[0]: a.txt
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter Directory Name : ");
+        String dname =  br.readLine();
+
+        File f = new File(dname);
+
+        if ( ! f.exists() )
+        {
+            System.out.println(dname + " : Directory Does not Exist !!");
+            System.exit(0);
+        }
+
+        if( ! f.isDirectory())
+        {
+            System.out.println(dname + " : is not a Directory !");
+            System.exit(0);
+        }
+
+        File fobs[] = f.listFiles(); // fobs -- [0]: a.txt(File) [1]: b.txt [2]:temp
+        int dcnt=0; // 1
+        int fcnt=0;  // 2
+
+        for( File ob : fobs)   // File ob = new File("temp")
+        {
+            if(ob.isFile())
+            {
+                fcnt++;
+            }
+
+            if(ob.isDirectory())
+            {
+                dcnt++;
+            }
+        }
+
+        System.out.println("No. of Files     : " +  fcnt);
+        System.out.println("No. of Directory : " +  dcnt);
+
+    }
+}
+
+
+File f = new File("a.txt");
+
+f.delete(): 'f' is object of 'a.txt' file
+
+f.getName() --> "a.txt"
+
+String s = "z.java"
+
+s.endsWith(".txt")
+
+
+Q. Accept directory name from user name, delete all .txt files
+===============================================================
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) throws IOException // args[0]: a.txt
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter Directory Name : ");
+        String dname =  br.readLine();
+
+        File f = new File(dname);
+
+        if ( ! f.exists() )
+        {
+            System.out.println(dname + " : Directory Does not Exist !!");
+            System.exit(0);
+        }
+
+        if( ! f.isDirectory())
+        {
+            System.out.println(dname + " : is not a Directory !");
+            System.exit(0);
+        }
+
+        File fobs[] = f.listFiles(); // fobs -- [0]: a.txt(File) [1]: z.java [2]:temp
+        
+
+        for( File ob : fobs)   // File ob = new File("temp")
+        {
+           
+           String filename = ob.getName(); // filename -->"temp"
+
+           if(filename.endsWith(".txt"))
+           {
+                ob.delete();
+                System.out.println(filename + " is deleted ! ");
+           }
+
+        }
+
+       
+
+    }
+}
+
+
+Q. Accept the file name & Read its data
+========================================
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the File Name to Read : ");
+        String fname = sc.nextLine(); 
+        
+       
+        FileReader fr = null;
+
+        try  
+        {
+            fr = new FileReader(fname);
+
+            System.out.println("Content of a File : " +  fname);
+            while(true)
+            {
+                int ch =  fr.read();
+
+                if(ch==-1)
+                {
+                    break;
+                }
+
+                System.out.print((char) ch);
+            }
+        }
+        catch(Exception e)
+        {
+            System.out.println("Problem : Unable to read file !!!");
+        }
+        finally
+        {
+            try 
+            {
+                fr.close();
+                sc.close();
+            }
+            catch(Exception e)
+            {
+                System.out.println("Problem while reading a file !!!");
+            }
+            
+        }
+    }
+}
+
+
+Q. Using try-with resource
+==============================
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        Scanner  sc= new Scanner(System.in);
+
+        System.out.print("Enter the File Name to Read : ");
+        String fname = sc.nextLine();
+               
+       
+        
+        try( FileReader fr = new FileReader(fname);)  
+        {
+          
+            System.out.println("Content of a File : " +  fname);
+            while(true)
+            {
+                int ch =  fr.read();
+
+                if(ch==-1)
+                {
+                    break;
+                }
+
+                System.out.print((char) ch);
+            }
+        }
+        catch(Exception e)
+        {
+            System.out.println("Problem : Unable to read file !!!");
+        }
+        
+    }
+}
+
+Q. Reading a data line by line
+=================================
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        Scanner  sc= new Scanner(System.in);
+        
+        System.out.print("Enter the File Name to Read : ");
+        String fname = sc.nextLine();
+           
+        FileReader fr = null;
+        BufferedReader br  = null;
+
+        try   
+        {
+            fr = new FileReader(fname);
+            br =  new BufferedReader(fr);
+            
+            System.out.println("Content of a File : " +  fname);
+
+            while(true)
+            {
+                String line = br.readLine();
+                
+                if(line == null)
+                {
+                    break;
+                }
+
+                System.out.println(line);
+            }
+        
+        }
+        catch(Exception e)
+        {
+            System.out.println("Problem : Unable to read file !!!");
+        }
+        finally
+        {
+            try 
+            {
+                br.close();
+                fr.close();
+            }
+            catch(Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        
+    }
+}
+
+Q. Read data line by line using try-with-resources
+====================================================
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        Scanner  sc= new Scanner(System.in);
+
+        System.out.print("Enter the File Name to Read : ");
+        String fname = sc.nextLine();
+        
+        try (
+                FileReader fr = new FileReader(fname); 
+                BufferedReader br =  new BufferedReader(fr);
+             )  
+        {
+            
+            System.out.println("Content of a File : " +  fname);
+
+            while(true)
+            {
+                String line = br.readLine();
+                
+                if(line == null)
+                {
+                    break;
+                }
+
+                System.out.println(line);
+            }
+        }
+        catch(Exception e)
+        {
+            System.out.println("Problem : Unable to read file !!!");
+        }
+
+    }
+}
+
+
+
+
+
+
+
+ 	
+Scope of a variable :
+======================
+The region where variable is declared in that region it is accessible, such regions are called as scope of a varaible.
+
+for(int i=0; i<3; i++)
+{
+	
+}
+
+System. out.println(i);  // error 'i' can not find symbol
+
+
+int a;
+if(condition)
+{
+	a = 10;
+}
+else
+{
+	a = 20;
+}
+
+
+
+FileWriter
+==========
+--> If file is does not exist then FileWriter will create NEW FILE.
+--> If file is alreader present then it data will be truncated and it will be opened as a NEW FILE.
+--> FileWrite class can be used as a appened mode(Means writing at the end of file)
+		FileWrite fw = new FileWrite("b.txt", true);
+
+
+Copy one file into another
+===========================
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter File Name to Read : ");
+        String frname = sc.nextLine();
+
+        System.out.print("Enter File Name to Write : ");
+        String fwname =  sc.nextLine();
+
+        FileReader fr = null;
+        FileWriter fw = null;
+        BufferedReader br = null;
+
+        try
+        {
+            fr = new FileReader(frname);
+            br =  new BufferedReader(fr);
+
+            fw = new FileWriter(fwname,true);
+
+            while(true)
+            {
+                String line = br.readLine();
+
+                if(line==null)
+                {
+                    break;
+                }
+
+                fw.write(line + "\n");
+            }
+
+            System.out.println(frname + " is copied into " + fwname + " Succesfully !");
+
+        }
+        catch(Exception e)
+        {
+            System.out.println("Unable to Read file !");
+        }
+        finally
+        {
+            try 
+            {
+                fr.close();
+                fw.close();
+                sc.close();
+                br.close();
+            }
+            catch(Exception e)
+            {
+                System.out.println("Problem while closing Resources !!");
+            }
+        }
+     }
+}
+
+
+Binary File Copy Program
+========================
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) throws Exception
+    {
+        
+        FileInputStream fis = new FileInputStream("a.png");
+        byte b[] = new byte[ fis.available() ]; 
+        fis.read(b);
+
+        FileOutputStream fos = new FileOutputStream("b.png");
+        fos.write(b);
+
+        fis.close();
+        fos.close();
+        System.out.println("File is Copied Succesfully !!!");
+    }
+}
+
+========================================================================
+
+
+
+
+Serialization & Deserialization
+===============================
+--> Serialization in Java is the process of converting an object into a byte stream, which can then be saved to a file, sent over a network, or transmitted between different Java virtual machines (JVMs).  
+
+--> Deserialization is the reverse process, where the byte stream is converted back into a copy of the object. 
+
+Marker Interface
+=================
+
+	1. Serializable
+	2. clonable
+
+
+interface Serilizable
+{
+}
+
+
+class Student implements Serializable
+{
+	
+}
+class Teacher
+{
+	
+}
+
+
+		System.out.println("*** Roll number : " +  s.getRno());
+		System.out.println("*** Name        : " + s.getName());
+		System.out.println("*** Percentage  : " + s.getPer());
+
+
+
+System.out.println(ob);
+
+D:\\2025\\b.txt
+
+
+Collection Framework
+======================
+
+ArrayList
+----------
+--> ArrayList is a collection class that implements List interface.
+--> It uses a dynamic ARRAY for storing the elements i.e. we do not need to declare its size, it grows as we add elements to it and it shrinks as we remove elements from it, during the runtime of the program. 
+--> Note: The ArrayList increases by approximately 50% of its current size whenever it runs out of space.
+--> ArrayList class can contain duplicate elements/objects. 
+--> ArrayList class maintains insertion order. 
+--> ‘null’ insertion is possible. 
+--> ArrayList class is not synchronized i.e that multiple threads cannot access and modify an ArrayList concurrently. 
+--> ArrayList allows "fast random access" because array works at the index basis. 
+
+--> In Java ArrayList class, manipulation is slow because a lot of shifting needs to be occurred if any element is removed from the array list. 
+
+-->  ArrayList is best suitable if our frequent operation is retrieval operation. 
+
+-->  ArrayList is the worst choice if you want to perform insertion or deletion in middle. To perform insertion & deletion go for LinkedList. 
+
+Example:
+---------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        ArrayList<String> aob = new ArrayList<>();
+
+        aob.add("Pune");
+        aob.add("Mumbai");
+        aob.add("Delhi");
+        aob.add("Pune");
+
+        System.out.println("Elements : " +  aob);  
+        System.out.println("Size of ArrayList : " + aob.size());
+
+        aob.remove("Pune");
+
+        System.out.println("Elements : " +  aob); 
+        System.out.println("Size of ArrayList : " + aob.size());
+       
+    }
+}
+
+
+Three ways to traverse ArrayList
+------------------------------------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        ArrayList<String> aob = new ArrayList<>();
+
+        aob.add("Pune");
+        aob.add("Mumbai");
+        aob.add("Delhi");
+        aob.add("Pune");
+
+        System.out.println("Elements : " +  aob);  
+        
+        System.out.println("Displaying Elements using Iterator : ");
+
+        Iterator ir = aob.iterator();
+
+        while( ir.hasNext() )
+        {
+            System.out.println(ir.next());
+        }
+
+
+        System.out.println("Displaying Elements using for-each : ");
+
+        for( String data : aob )
+        {
+            System.out.println(data);
+        }
+        
+    }
+}
+
+Example:
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        ArrayList<String> aob = new ArrayList<>();
+
+          aob.add("Pune");
+          aob.add("Mumbai");
+          aob.add("Delhi");
+          aob.add("Pune");
+
+        System.out.println("Elements : " +  aob);  
+        
+        ArrayList<String> bob = new ArrayList<>();
+        bob.add("Satara");
+        bob.add("Solapur");
+        bob.add("Sangli");
+
+        aob.addAll(2,bob);
+
+        System.out.println("Elements : " +  aob); 
+        
+    }
+}
+
+
+Example:
+-----------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        ArrayList<String> aob = new ArrayList<>();
+
+          aob.add("Pune");
+          aob.add("Mumbai");
+          aob.add("Delhi");
+          aob.add("Pune");
+
+        System.out.println("Elements : " +  aob);  
+        
+        aob.clear();
+
+        System.out.println("Elements : " +  aob); 
+        
+    }
+}
+
+
+
+
+
+Vector
+-------
+--> Vector is a collection class that implements List interface.
+--> It uses a dynamic ARRAY for storing the elements i.e. we do not need to declare its size, it grows as we add elements to it and it shrinks as we remove elements from it, during the runtime of the program. 
+--> Vector class is synchronized.
+
+
+What is difference between ArrayList and Vector
+-------------------------------------------------
+1. ArrayList is not Sychronized.
+	Vector is Sychoronized.
+
+2. 
+
+
+Assignment
+--------------
+
+Q. Accept 'n' cities from user and Store it into array list.
+
+Approach-1
+----------
+int n = Integer.parseInt(br.readLine());
+
+for(int  i =1; i<=n ;i++)
+{
+	
+}
+
+Approach-2
+-----------
+Enter the City :Pune
+Do you want to Continue[Yes/No] : Yes
+Enter the City : Mumbai
+Do you want to Continue[Yes/No] : Yes
+Enter the City : Delhi
+Do you want to Continue[Yes/No] : No
+
+--Memory--
+	Cities :[Pune, Mumbai, Delhi]
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> cities = new ArrayList<>();
+
+        while(true)
+        {
+            System.out.print("Enter the City : ");
+            String name = sc.nextLine();
+
+            cities.add(name);
+
+            System.out.print("Do you want to continue[Yes/No] : ");
+
+            String choice = sc.nextLine(); // choice="TCA"
+
+            if(choice.equalsIgnoreCase("Yes"))
+            {
+                continue;
+            }
+            else 
+            {
+                break;
+            }
+        }
+
+        System.out.println(" Your Cities : " + cities);
+    }
+}
+
+
+Q. Accept 'n' cities from user and Store unique list into array list .
+-----------------------------------------------------------------------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> cities = new ArrayList<>();
+
+        while(true) // cities-->[Pune,mumbai]
+        {
+            System.out.print("Enter the City : ");
+            String name = sc.nextLine();
+
+            if(cities.contains(name))
+            {
+                System.out.println(name + " is already present !!");
+                continue;
+            }
+
+            cities.add(name);
+
+            System.out.print("Do you want to continue[Yes/No] : ");
+
+            String choice = sc.nextLine(); // choice="TCA"
+
+            if(choice.equalsIgnoreCase("Yes"))
+            {
+                continue;
+            }
+            else 
+            {
+                break;
+            }
+        }
+
+        System.out.println(" Your Cities : " + cities);
+    }
+}
+
+Output:
+-------
+
+Enter the City : Pune
+Do you want to continue[Yes/No] : Yes
+Enter the City : Mumbai
+Do you want to continue[Yes/No] : Yes
+Enter the City : Pune
+Pune is already present !!
+Enter the City : Delhi
+Do you want to continue[Yes/No] : Yes
+Enter the City : Mumbai
+Mumbai is already present !!
+Enter the City : Banglore
+Do you want to continue[Yes/No] : No
+
+Your Cities : [Pune, Mumbai, Delhi, Banglore]
+
+
+
+
+
+
+interface MyList
+{
+	abstract public void add(String data);
+}
+
+class MyArrayList implments MyList
+{
+	public void add(String data)
+	{
+		---
+	}
+}
+
+
+LinkedList
+-----------
+
+
+Traversing LinkedList 
+-----------------------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        LinkedList<String> L = new LinkedList<>();
+        L.add("red");
+        L.add("blue");
+        L.add("Yellow");
+        L.add("green");
+
+        System.out.println("Colors : " + L);
+
+        System.out.println("Linked List Using Iterator : ");
+
+        ListIterator ir = L.listIterator();
+        while(ir.hasNext())
+        {
+            System.out.println(ir.next());
+        }
+
+        System.out.println("Reverse Printing LinkedList : ");
+
+        while(ir.hasPrevious())
+        {
+            System.out.println(ir.previous());
+        }
+
+
+        System.out.println("LinkedList Using foreach loop :");
+
+        for(String data : L)
+        {
+            System.out.println(data);
+        }
+    }
+}
+
+
+Q. What is Difference Between Iterator and ListIterator ?
+---------------------------------------------------------
+--> With iterator you can move only forward, but with List Iterator you can move back 
+word also while reading the elements. 
+--> Iterator works any collection, ListIterator can work with LinkedList.
+
+Q. ArrayList Vs LinkedList
+------------------------
+1. Array is Faster in case of accessing elements
+	LinkedList is slower in case of accessing element.
+	bcz to access 'n-th' element we have to traverse 'n-1' elements.
+
+2. Array is slower in case of deletion and Insertion of an element.
+   bcz it does 'n' shift operations for single insertion/deletion.
+   In other words - Insertion & deletion in arraya takes O(n) time. 
+
+   LinkedList is Faster in case of insertion or deletion of an element. 
+   In other words - Insertion & deletion in linked list takes O(1) time.
+
+
+Example:
+---------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        LinkedList<String> L1 = new LinkedList<>();
+        L1.add("red");
+        L1.add("blue");
+        L1.add("Yellow");
+        L1.add("green");
+
+        System.out.println("Colors : " + L1);
+
+       LinkedList<String> L2 = new LinkedList<>();
+       L2.add("pink");
+       L2.add("green");
+
+       int pos = L1.indexOf("blue");
+       L1.addAll(pos+1,L2);
+
+       System.out.println("Colors : " + L1);
+    }
+}
+
+
+
+
+
+
+
+
+```
+LinkedList<String> L1 = new LinkedList<>();
+        L1.add("red");
+        L1.add("blue");
+        L1.add("Yellow");
+        L1.add("green"); ```
+In above Code I want to find out position of Pune.
+So what will be the method in LinkedList class.
+"Corret me" if anywhere I am wrong.
+
+
+Q. Accept 'n' number from user and Prepare two lists One which holds even numbers and Other will hold Odd numbers.
+----------------------------------------------------------------------
+
+Hint-
+
+LinkedList<Integer> evenlist = new LinkedList<>();
+LinkedList<Integer> oddlist = new LinkedList<>();
+
+
+  		  LinkedList<Integer> L1 = new LinkedList<>();
+        L1.add(11);
+        L1.add(22);
+        L1.add(33);
+
+        System.out.println("Numbers : " + L1);
+
+Solution
+-----------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        LinkedList<Integer> evenlist = new LinkedList<>();
+        LinkedList<Integer> oddlist = new LinkedList<>();
+        
+        while(true)
+        {
+            System.out.print("Enter the number : ");
+            int num = sc.nextInt();
+
+            if(num%2 == 0)
+            {
+                evenlist.add(num);
+            }
+            else 
+            {
+                oddlist.add(num);
+            }
+
+            System.out.print("Do you want to continue[Yes/No] : ");
+
+            String choice = sc.next(); 
+
+            if(choice.equalsIgnoreCase("Yes"))
+            {
+                continue;
+            }
+            else 
+            {
+                break;
+            }
+        }
+
+        System.out.println("Even Numbers List : " + evenlist);
+        System.out.println("Odd  Numbers List : " + oddlist);
+    }
+}
+
+
+
+
+
+
+
+Stack & Queue
+----------------
+
+
+
+List<Student> L = new ArrayList<>();  // Loose Coupling
+
+--------------------------------------------------------------
+
+List : I want to store all values including duplicates with their insertion order.
+
+Set  : I want store all 'unique' values(No Duplicate Values are allowed)
+
+Example: Emails Collect, contact collection
+
+abc@gmail.com
+xyz@gmail.com
+abc@gmail.com --> set will not allow to be part of collection
+
+Data : 33 11 22
+
+TreeSet : 'unique' values, Tree(BST) Datastructure, Searching Faster, Sorted order
+HashSet : 'unique' values, Hashing tech, No insertion orders
+LinkedHashSet : 'unique' values,LinkedList, addition & deletion, insertion order
+
+
+
+
+
+101 Sachin Dhane
+
+20 AJ
+20 CJ
+03 HFB
+
+
+
+
+  PK
+21 CJ
+20 AJ
+22 CJ
+21 AJ
+
+TreeSet
+-------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        TreeSet<String> ts = new TreeSet<>();
+        ts.add("pune");
+        ts.add("mumbai");
+        ts.add("pune");
+        ts.add("pelhi");
+        ts.add("banglore");
+
+        System.out.println("Elements : " +  ts);
+
+
+        System.out.println("TreeSert Using Iterator : ");
+
+        Iterator ir = ts.iterator();
+
+        while( ir.hasNext())
+        {
+            System.out.println(ir.next());
+        }
+
+        System.out.println("Using For-each Loop :");
+
+        for( String data : ts )
+        {
+            System.out.println(data.toUpperCase());
+        }
+
+    }
+}
+
+ TreeSet<String> ts = new TreeSet<>();
+        ts.add("pune");
+        ts.add("mumbai");
+        ts.add("pune");
+        ts.add("delhi");
+        ts.add("banglore");
+
+        System.out.println("Tree Set Elements Ascending : " +  ts);
+        System.out.println("Tree Set Elements Descending : " +  ts.descendingSet());
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        TreeSet<String> ts = new TreeSet<>();
+        ts.add("pune");
+        ts.add("mumbai");
+        ts.add("pune");
+        ts.add("delhi");
+        ts.add("banglore");
+
+        System.out.println("Tree Set Elements Ascending : " +  ts);
+        System.out.println("Tree Set Elements Descending : " +  ts.descendingSet());
+    }
+}
+
+
+
+Static Variable : 
+-----------------
+pubilc static int cnt=0
+To shared by all objects.
+
+
+static method:
+-----------------
+To share functionality(Each word capitalized) with objects which is common to all object.
+
+Jya methods static ahet manje tyatil functionality sarv objects la comman ahe. mhun static methods usually 'Utility Methods'.
+
+sachin vilas dhane ---> Utility Method---> Sachin Vilas Dhane
+
+----------------------------------------------------------------------------
+
+Hashtable
+---------
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+       
+       Hashtable<Integer, String> ht = new Hashtable<>();
+
+       ht.put(91,"India");
+       ht.put(61,"Australia");
+       ht.put(31,"Newzeland");
+
+       System.out.println("Elements :" +  ht);
+       //System.out.println("Data :"+ ht.get(91));
+
+       System.out.println("Using Enumeration :");
+
+       Enumeration keys = ht.keys(); 
+       
+       while(keys.hasMoreElements())
+       {            
+            Integer id = (Integer) keys.nextElement();
+            String counrty = ht.get(id);
+
+            System.out.println(id + "-->" + counrty);
+       }
+
+
+       System.out.println("Using Foreach Loop");
+
+       Set<Integer> s = ht.keySet();   // s --> {31,61,91}
+
+       for( Integer id : s)
+       {
+            String country =  ht.get(id);
+
+            System.out.println(id +"-->"+ country);
+       }
+    }
+}
+
+HashMap
+-------
+
+import java.io.*;
+import java.util.*;
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+       
+       HashMap<Integer, String> ht = new HashMap<>();
+
+       ht.put(91,"India");
+       ht.put(61,"Australia");
+       ht.put(31,"Newzeland");
+
+       System.out.println("Elements :" +  ht);
+      
+        System.out.println("Using Foreach Loop");
+
+       Set<Integer> s = ht.keySet();   // s --> {31,61,91}
+
+       for( Integer id : s)
+       {
+            String country =  ht.get(id);
+
+            System.out.println(id +"-->"+ country);
+       }
+      
+    }
+}
+
+Assignment
+------------
+
+Q : Accept 'n' integers from the user and store them in a 
+collection. Display them in the sorted order. The collection 
+should not accept duplicate elements. (use suitable collection) 
+
+n=5
+
+11 is added
+22 is added
+11 is already present !
+33 is added
+44 is added
+33 is already present !
+55 is added
+
+Hint:
+=====
+
+contains() --> True / false
+
+add(11)  --> True
+add(11)  --> False
+
+boolean status = ts.add(11);
+
+i=1
+i<=n
+i++
+
+
+try
+{
+
+	if(args[0].equals("a") )
+	{
+	
+	}
+	else
+	{
+		throw new VowelException("Given Char is not a Vowel");
+	}
+}
+catch(VowelException ve)
+{
+	
+}
+
+
+--> Collections(List,Set,Map) can hold object.
+--> Objects can be -
+		1. Pre-defined class's objects.
+			Ex: Integer, Double, String etc.
+
+		2. User-defined class's
+			Ex: Student, Course etc.
+
+-----------------------------------------------
+
+Example:
+--------
+import java.io.*;
+import java.util.*;
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+       
+       List<Integer> L = new ArrayList<>();
+       L.add(33);
+       L.add(11);
+       L.add(22);
+
+       System.out.println("List of Integer Before Sort : " +  L);
+       
+       Collections.sort(L);
+
+        System.out.println("List of Integer After Sort : " +  L);
+
+    }
+}
+
+
+Use of Comparable Interface
+-----------------------------
+Collection madhalya user defined object che sorting karnyasathi tumla Comparable interface vaprava lagato.
+
+
+Example: How to userdefined Objects in Collections
+-----------------------------------------------------
+import java.io.*;
+import java.util.*;
+
+class Student 
+{
+    private int rno;
+    private String name;
+    private double per;
+    
+    public Student() 
+    {
+        
+    }
+
+    public Student(int rno, String name, double per) 
+    {
+        this.rno = rno;
+        this.name = name;
+        this.per = per;
+    }
+    
+    
+    public void display()
+    {
+        System.out.println("Roll Number : " +  rno);
+        System.out.println("Name        : " +  name);
+        System.out.println("Percentage  : " + per );
+    }
+
+    @Override
+    public String toString() 
+    {
+        return "[" + rno + "," + name + "," + per + "]";  // [ 101,AAA,60]
+        
+        
+    }
+}
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+       
+        Student s1 = new Student(103,"CCC",80);
+        Student s2 = new Student(101,"AAA", 60);
+        Student s3 = new Student(102,"BBB", 70);
+        
+        
+        List<Student> L = new ArrayList<>();
+        L.add(s1);
+        L.add(s2);
+        L.add(s3);
+        
+        System.out.println("Elements in List : "+ L); // D D D  S.O.P(s1)
+        
+        System.out.println("Student Information :");
+        for( Student ob : L)
+        {
+            ob.display();
+            System.out.println("-------------------------------");
+        }
+
+    }
+}
+
+Comparable Interface
+====================
+
+class Student implements Comparable<Student>
+{
+	private int rno;
+	private String name;
+	private double per;
+	
+	public Student() 
+	{
+		
+	}
+
+	public Student(int rno, String name, double per) 
+	{
+		this.rno = rno;
+		this.name = name;
+		this.per = per;
+	}
+	
+	
+	public void display()
+	{
+		System.out.println("Roll Number : " +  this.rno);
+		System.out.println("Name        : " +  this.name);
+		System.out.println("Percentage  : " +  this.per );
+	}
+
+	@Override
+	public String toString() 
+	{
+		return "[" + rno + "," + name + "," + per + "]";  // [ 101,AAA,60]
+		
+		
+	}
+
+	@Override
+	public int compareTo(Student ob2)        // ob1.compareTo(ob2)
+	{
+		/*
+		Integer i1 = this.rno;
+		Integer i2 = ob2.rno;
+				
+		return i1.compareTo(i2);
+		
+		*/
+		
+		Double d1 = this.per;
+		Double d2 = ob2.per;
+		return -d1.compareTo(d2);
+			
+		/*
+		String s1 = this.name;
+		String s2 = ob2.name;
+		return -s1.compareTo(s2);
+		*/
+		
+	}
+	
+}
+
+public class Demo 
+{
+
+	public static void main(String[] args) 
+	{
+				
+		Student s1 = new Student(103,"Sachin",80);
+		Student s2 = new Student(101,"Saniya", 90);
+		Student s3 = new Student(102,"Sanket", 40);
+		
+		
+		List<Student> L = new ArrayList<>();
+		L.add(s1);
+		L.add(s2);
+		L.add(s3);
+		
+		System.out.println("Elements in List Before Sort : "+ L); 
+				
+		Collections.sort(L);
+		
+		System.out.println("Elements in List After Sort : " +  L);		
+		
+	}
+
+}
+
+
+Assignment : Use Comparable Interface concept on Employee class
+
+Class Employee
+{
+		eid
+		ename
+		esalary
+		dept    --> CS, arts. commerce
+}
+
+
+
+*Interview Question*
+-------------------
+Q. What is Comparable & Comparator ?
+
+Q. Are they Similar ?
+----------------------
+	--> Yes, They are used when we want to sort user-defined objects which are stored in collection.
+
+Q. What is Difference between Them ?
+-------------------------------------
+--> Using Comparable we can sort() objects only based one Field(rno or name or per)
+--> Using Comparator we can sort objects based on any Field(rno or name or per) in any order(Asc or Desc) on user choice.
+
+
+
+import java.io.*;
+import java.util.*;
+
+class Student 
+{
+    private int rno;
+    private String name;
+    private double per;
+    
+    public Student() 
+    { 
+    }
+
+    public Student(int rno, String name, double per) 
+    {
+        this.rno = rno;
+        this.name = name;
+        this.per = per;
+    }
+    
+    public int getRno()
+    {
+        return rno;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+    
+    public double getPer()
+    {
+        return per;
+    }
+
+    public void display()
+    {
+        System.out.println("Roll Number : " +  rno);
+        System.out.println("Name        : " +  name);
+        System.out.println("Percentage  : " + per );
+    }
+
+    @Override
+    public String toString() 
+    {
+        return "[" + rno + "," + name + "," + per + "]";  // [ 101,AAA,60]
+    }
+}
+
+
+class RollNumberAscendingComparator implements Comparator<Student>
+{
+    public int compare(Student ob1, Student ob2)
+    {
+        Integer i1 = ob1.getRno();
+        Integer i2 = ob2.getRno();
+
+        return i1.compareTo(i2);
+    }
+}
+
+class RollNumberDescendingComparator implements Comparator<Student>
+{
+    public int compare(Student ob1, Student ob2)
+    {
+        Integer i1 = ob1.getRno();
+        Integer i2 = ob2.getRno();
+
+        return -i1.compareTo(i2);
+    }
+}
+
+class NameAscendingComparator implements Comparator<Student>
+{
+    public int compare(Student ob1, Student ob2)
+    {
+       String name1 = ob1.getName();
+       String name2 = ob2.getName();
+
+       return name1.compareTo(name2); 
+    }
+}
+
+class NameDescendingComparator implements Comparator<Student>
+{
+    public int compare(Student ob1, Student ob2)
+    {
+       String name1 = ob1.getName();
+       String name2 = ob2.getName();
+
+       return -name1.compareTo(name2); 
+    }
+}
+
+class PercentageAscendingComparator implements Comparator<Student>
+{
+    public int compare(Student ob1, Student ob2)
+    {
+        Double p1 = ob1.getPer();
+        Double p2 = ob2.getPer();
+
+        return p1.compareTo(p2);
+    }
+}
+
+class PercentageDescendingComparator implements Comparator<Student>
+{
+    public int compare(Student ob1, Student ob2)
+    {
+        Double p1 = ob1.getPer();
+        Double p2 = ob2.getPer();
+
+        return -p1.compareTo(p2);
+    }
+}
+
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+       
+        Student s1 = new Student(103,"Sachin",80);
+        Student s2 = new Student(101,"Vijay", 90);
+        Student s3 = new Student(102,"Ajay", 40);
+               
+        List<Student> L = new ArrayList<>();
+        L.add(s1);
+        L.add(s2);
+        L.add(s3);
+        
+        System.out.println("List of Students Before Sort : "+ L); 
+
+        Collections.sort(L, new RollNumberAscendingComparator());
+
+        System.out.println("Ascending Roll number wise : "+ L); 
+
+        Collections.sort(L, new RollNumberDescendingComparator());
+
+        System.out.println("Descending Roll number wise : "+ L); 
+
+
+        Collections.sort(L, new NameAscendingComparator());
+        System.out.println("Ascending Namewise : "+ L);
+
+        
+        Collections.sort(L, new NameDescendingComparator());
+        System.out.println("Descending Namewise : "+ L);
+
+
+        Collections.sort(L, new PercentageAscendingComparator());
+        System.out.println("Ascending Perwise : "+ L);
+
+        Collections.sort(L, new PercentageDescendingComparator());
+        System.out.println("Descending Perwise : "+ L);
+
+    }
+}
+
+
+
+
+
+
+Points -
+---------
+--> Course Completion Certificatie
+--> Advance Java (10 Days) + [SQL-PLSQL]
+--> Hibernate 	(Need : Core Java  + JDBC )
+--> Spring Boot  
+--> Whatsapp Group Description 
+		--> Links : PaintIMages, Source Codes, Study Material
+--> Class App
+		--> All notes + Video
+
+=========================================================
+
+
+
+
+
+
+
+
+
+
+What is NullPointerException ?
+-------------------------------
+--> NullPointerException is occured when we are trying to acceess memeber of a class when object variable holds 'null' reference.
+
+
+Example :
+ 		A ob = null;
+      ob.display();  // NPE
+
+--> NullPointerException is occured when we are trying to acceess arrays member like 'length' when array variable hold 'null' reference.
+
+Example:
+	int a [] = null ;
+   System.out.println("No. of Locations:" + a.length );  // NPE
+
+
+
+
+

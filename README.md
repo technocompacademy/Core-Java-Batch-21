@@ -13,7 +13,7 @@ Contact
 
 📖 Introduction
 
-This repository is created to centralize and distribute all study materials related to the Core Java Batch conducted by xyz.com Organization.
+This repository is created to centralize and distribute all study materials related to the Core Java Batch conducted by www.technocompacademy.com Organization.
 
 The goal is to:
 
